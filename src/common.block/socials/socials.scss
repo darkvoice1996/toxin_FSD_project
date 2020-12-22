@@ -1,0 +1,30 @@
+.socials {
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  &__icon {
+    font-size: 24px;
+
+    &:hover {
+      @include transition_global;
+      text-shadow: 0 0 5px $dark_s25;
+    }
+
+  }
+
+  &__item {
+    margin-left: 22px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    color: transparent;
+    background: $gradient_primary;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+

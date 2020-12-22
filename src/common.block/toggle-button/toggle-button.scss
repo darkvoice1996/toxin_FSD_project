@@ -1,0 +1,53 @@
+.toggle-button {
+  padding-bottom: 5px;
+  &__text {
+    line-height: 20px;
+    padding-left: 50px;
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__slider {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    box-sizing: border-box;
+
+    border: 1px solid $dark_s25;
+    border-radius: 10px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 3px;
+      left: 3px;
+
+      width: 12px;
+      height: 12px;
+      box-sizing: border-box;
+
+      border-radius: 50%;
+
+      background-color: $dark_s25;
+
+      @include transition_global;
+    }
+
+  }
+
+  input:checked + .toggle-button__slider {
+    border-color: $purple;
+    &::before {
+      left: 23px;
+
+      background: $gradient_primary;
+
+      @include transition_global;
+    }
+  }
+}

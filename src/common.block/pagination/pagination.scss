@@ -1,0 +1,99 @@
+@import "~paginationjs/dist/pagination.css";
+.pagination {
+  height: 72px;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &_footer {
+    height: 24px;
+  }
+}
+
+
+// PLUGIN CUSTOMIZATION
+
+.paginationjs {
+  @include montserrat(12px, $bgc, 400);
+}
+
+
+.paginationjs .paginationjs-pages li {
+  border: none;
+  user-select: none;
+  -moz-user-select: none;
+  -html-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+
+.paginationjs .paginationjs-pages li:first-child, .paginationjs .paginationjs-pages li:first-child > a {
+  border-radius: 50%;
+}
+
+.paginationjs .paginationjs-pages li:last-child {
+  border-right: none;
+  border-radius: 50%;
+}
+
+.paginationjs .paginationjs-pages li.active > a {
+  line-height: 40px;
+  font-size: 12px;
+  background: transparent;
+  color: $bgc;
+  cursor: pointer;
+
+  &:hover {
+    color: $bgc;
+  }
+}
+
+.paginationjs .paginationjs-pages li > a {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  background: transparent;
+  color: $dark_s50;
+
+  &:hover {
+    //@include link__hover_dark;
+  }
+
+}
+
+.paginationjs .paginationjs-pages li.active {
+  background: $gradient_primary;
+  border-radius: 50%;
+}
+
+.paginationjs .paginationjs-pages li {
+  height: 40px;
+  width: 40px;
+}
+
+.paginationjs .paginationjs-pages li:last-child {
+  a {
+    color: transparent;
+    &:hover {
+      color: transparent;
+    }
+  }
+
+  background: url("./common.block/pagination/arrow_forward.svg") center center no-repeat, $gradient_secondary;
+  background-size: 18px;
+}
+
+.paginationjs .paginationjs-pages li > a:hover {
+  background: none;
+  height: 40px;
+  width: 40px;
+}
+
+.paginationjs .paginationjs-pages li.disabled > a {
+  cursor: default;
+  opacity: 0.7;
+  font-weight: 700;
+}

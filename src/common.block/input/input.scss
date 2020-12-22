@@ -1,0 +1,61 @@
+.input {
+  &__label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  width: 100%;
+  max-width: 320px;
+  height: 44px;
+
+  padding: 14px 14px;
+
+  border: 1px solid $dark_s25;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  @include montserrat(14px, $dark_s75, 400);
+
+  &::placeholder {
+    color: $dark_s25;
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $dark_s50;
+    transition: .5s;
+
+    &::placeholder {
+      color: $dark_s75;
+    }
+  }
+  &_narrow {
+    max-width: 266px;
+  }
+}
+
+.input-subscription {
+  &__wrapper {
+    width: 267px;
+    position: relative;
+
+  }
+
+  &__icon {
+    position: absolute;
+    right: 0;
+
+    padding: 10px;
+
+    font-size: 24px;
+    color: transparent;
+
+    background: $gradient_primary;
+    -webkit-background-clip: text;
+  }
+
+
+}
+

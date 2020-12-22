@@ -1,0 +1,20 @@
+mixin checkbox(title)
+
+    form(action="" method="").checkbox
+        .checkbox__title
+            +label(title)
+        block
+
+mixin checkbox__item(id, name, text)
+    label(for=id).checkbox__item
+        input(type="checkbox" id=id name=name)
+        .checkbox__custom-input
+        .checkbox__text= text
+
+mixin checkbox-rich__item(id, name, text, description)
+    label(for=id).checkbox__item
+        input(type="checkbox" id=id name=name)
+        .checkbox__custom-input
+        .checkbox__text.checkbox__text_bold= text
+        .checkbox__empthy-space
+        .checkbox__decription= description

@@ -1,0 +1,15 @@
+mixin header(authorised)
+    header.header
+        .header__container
+            .header__logo
+                include ../logo/logo
+            .header__empty-space
+            .header__burger-button
+                include ../burger-button/burger-button
+            .header__navbar
+                include ../navbar/navbar
+            .header__user
+                if authorised
+                    include ../auth-user/auth-user
+                else
+                    include ../auth-buttons/auth-buttons

@@ -1,0 +1,11 @@
+mixin radio-button(name)
+    block
+    .radio-button
+        .radio-button__item
+            input(type="radio" id="man" name=name value="man").radio-button__input
+            label(for="man").text Мужчина
+        .radio-button__item
+            input(type="radio" id="woman" name=name value="woman").radio-button__input
+            label(for="woman").text Женщина
+
+

@@ -1,0 +1,24 @@
+.room-feature {
+  display: flex;
+  flex-flow: row nowrap;
+
+  &__icon {
+    i {
+      font-size: 48px;
+      color: transparent;
+    }
+    background: $gradient_primary;
+    -webkit-background-clip: text;
+  }
+
+  &__text {
+    height: 48px;
+    margin-left: 10px;
+    line-height: 24px;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+
+}

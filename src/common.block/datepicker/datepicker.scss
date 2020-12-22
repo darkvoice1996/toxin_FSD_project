@@ -1,0 +1,211 @@
+@import "~air-datepicker/dist/css/datepicker.css";
+
+.datepicker {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  width: 318px;
+
+  padding-top: 14px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include montserrat(12px, $dark_s50, 400);
+  font-size: 12px;
+
+  &--nav {
+    width: 280px;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+
+    border: none;
+
+    &-title {
+      padding: 0;
+
+      border: none;
+
+      @include montserrat(19px, $dark_s100, 400);
+    }
+
+    &-action {
+        svg {
+          display: none;
+        }
+
+      &[data-action="prev"] {
+        background: url("./common.block/datepicker/arrow_back.svg") no-repeat center center;
+      }
+
+      &[data-action="next"] {
+        background: url("./common.block/datepicker/arrow_next.svg") no-repeat center center;
+      }
+
+    }
+  }
+
+  &--cell {
+    margin: 0;
+
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+
+
+    &.-focus- {
+      background: $bgc;
+    }
+
+    &.-current-,
+    &.-current-.-focus-,
+    &.-current-.-in-range- {
+
+      border: none;
+      border-radius: 50%;
+
+      @include montserrat(inherit, $bgc, 400);
+
+      background: $gradient_secondary;
+    }
+
+    &.-in-range- {
+      color: $dark_s50;
+      border-radius: 0;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: $gradient_primary;
+        opacity: 0.1;
+        z-index: -1;
+
+      }
+    }
+
+    &.-in-range-.-focus- {
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $bgc;
+        opacity: 0.6;
+        z-index: -1;
+      }
+    }
+
+    &.-disabled- {
+      cursor: default;
+      color: $dark_s25;
+    }
+
+    &.-disabled-.-focus- {
+      color: $bgc;
+      opacity: 0.5;
+    }
+
+    &.-disabled-.-in-range- {
+      color: #a1a1a1;
+
+    }
+
+    &.-disabled-.-current-.-focus- {
+      color: #aeaeae;
+    }
+
+    &.-range-from- {
+      //border: 1px solid $dark_s25;
+      background: $gradient_primary;
+      border-radius: 50%;
+      color: #fff;
+
+      &:after {
+        content: '';
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: $gradient_primary;
+        opacity: 0.25;
+        z-index: -1;
+      }
+
+    }
+
+    &.-range-to- {
+      border: none;
+      background: $gradient_primary;
+      color: #fff;
+      border-radius: 50%;
+
+      &:before {
+        content: '';
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: $gradient_primary;
+        opacity: 0.25;
+        // nenf
+        z-index: -1;
+      }
+    }
+
+    &.-selected- {
+      color: #fff;
+      border: none;
+      background: $gradient_primary;
+    }
+
+    &.-selected-.-current- {
+      color: #fff;
+      background: $gradient_primary;
+    }
+
+    &.-selected-.-focus- {
+      background: $gradient_primary;
+    }
+  }
+
+  &--cells {
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-gap: 0;
+  }
+
+  &--days-names {
+    padding: 0;
+    margin: 22px 0 0 0;
+
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-gap: 0;
+  }
+
+  &--day-name {
+    height: 40px;
+
+    @include montserrat(inherit, $purple, 400);
+  }
+
+  &--buttons {
+    padding: 0;
+    border-top: none;
+  }
+
+  //&--button {
+  //  @extend .btn-link
+  //}
+}

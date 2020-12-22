@@ -1,0 +1,42 @@
+.title {
+  margin: 0;
+  @include montserrat(24px, $dark_s100, 700);
+  line-height: 29px;
+}
+
+.subtitle {
+  @include montserrat(19px, $dark_s100, 700);
+  line-height: 23px;
+  margin: 0;
+}
+
+.label {
+  display: inline-block;
+  @include montserrat(12px, $dark_s100, 700);
+  text-transform: uppercase;
+  line-height: 15px;
+  margin: 0;
+}
+
+.text {
+  @include montserrat(14px, $dark_s75, 400);
+  line-height: 24px;
+  margin: 0;
+}
+
+.link {
+  @include montserrat(14px, $dark_s100, 400);
+  text-decoration: none;
+
+  &:hover {
+    //text-decoration: underline;
+    color: $dark_s75;
+    @include transition_global;
+    text-shadow: 0 0 5px $dark_s25;
+  }
+
+  &_light {
+    @include montserrat(14px, $dark_s50, 400);
+  }
+}
+

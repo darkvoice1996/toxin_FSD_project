@@ -1,0 +1,9 @@
+form(action="" method="").card
+    +title("Найдём номера под ваши пожелания")
+    .card__fieldset
+        +date-dropdown("check-in", "Прибытие", "check-out", "Выезд")
+    .card__fieldset
+        +label("Гости")
+        include ../dropdown/dropdown__guests
+    .card__fieldset
+        +btn_send('Подобрать номер')

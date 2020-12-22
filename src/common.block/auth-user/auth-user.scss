@@ -1,0 +1,18 @@
+.auth-user {
+  height: 30px;
+
+  padding-left: 20px;
+  margin-left: 10px;
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  border-left: 1px $dark_s10 solid;
+
+  &__name {
+    @include montserrat(14px, $dark_s50, normal);
+    white-space: nowrap;
+  }
+
+}

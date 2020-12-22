@@ -1,0 +1,40 @@
+@import "~normalize.css";
+@import "variables";
+@import "common.block/ui-kit/ui-kit";
+@import "assets/fonts/font-face";
+@import "assets/fonts/font-awesome/css/all.css";
+@import "common.block/typography/typography";
+@import "common.block/logo/logo";
+@import "common.block/btn/btn";
+@import "common.block/navbar/navbar";
+@import "common.block/auth-buttons/auth-buttons";
+@import "common.block/auth-user/auth-user";
+@import "common.block/header/header.scss";
+@import "common.block/burger-button/burger-button";
+@import "common.block/footer-bottom/footer-bottom";
+@import "common.block/socials/socials";
+@import "common.block/footer-body/footer-body";
+@import "common.block/footer-nav/footer-nav";
+@import "common.block/input/input";
+@import "common.block/date-dropdown/date-dropdown";
+@import "common.block/datepicker/datepicker";
+@import "common.block/dropdown/dropdown";
+@import "common.block/checkbox/checkbox";
+@import "common.block/radio-button/radio-button";
+@import "common.block/toggle-button/toggle-button";
+@import "common.block/like-button/like-button";
+@import "common.block/pagination/pagination";
+@import "common.block/rate-button/rate-button";
+@import "common.block/bullet-list/bullet-list";
+@import "common.block/room-feature/room-feature";
+@import "common.block/expandable-block/expandable-block";
+@import "common.block/card/card";
+@import "common.block/comment/comment";
+@import "common.block/book-up/book-up";
+@import "common.block/room-info/room-info";
+@import "common.block/room-card/room-card";
+
+body {
+  @include montserrat(14px, $dark_s75, 400);
+  background-color: $bgc;
+}

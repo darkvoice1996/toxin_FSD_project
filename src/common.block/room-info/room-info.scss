@@ -1,0 +1,47 @@
+.room-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &__number {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    font-weight: bold;
+  }
+
+  &__price {
+    display: flex;
+    flex-flow: row nowrap;
+    color: $dark_s50;
+  }
+}
+
+.room-number {
+  &__number {
+
+    color: $dark_s100;
+    font-size: 24px;
+
+    &:before {
+      content: '№ ';
+      font-size: 14px;
+    }
+  }
+
+  &__lux {
+    color: $purple;
+  }
+}
+
+.room-price {
+  &__number {
+    font-weight: bold;
+  }
+
+  &__period {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

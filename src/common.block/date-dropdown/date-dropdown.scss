@@ -1,0 +1,13 @@
+.date-dropdown {
+  &__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    max-width: 320px;
+  }
+
+  &__input {
+    max-width: 150px;
+  }
+}

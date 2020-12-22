@@ -1,0 +1,39 @@
+include ../burger-button/burger-button
+nav.navbar
+    a(href="")
+        .navbar__item
+            .navbar__link.navbar__link_bold.link О нас
+
+    a(href="")
+        .navbar__item.navbar-dropdown
+            .navbar__link.link Услуги
+                i.material-icons expand_more
+
+            ul.navbar-dropdown__content
+                    li
+                        a(href="").navbar__link.link Услуга 1
+                    li
+                        a(href="").navbar__link.link Услуга 2
+                    li
+                        a(href="").navbar__link.link Услуга 3
+
+    a(href="")
+        .navbar__item
+            .navbar__link.link Вакансии
+
+    a(href="")
+        .navbar__item
+            .navbar__link.link Новости
+
+    a(href="")
+        .navbar__item.navbar-dropdown
+            .navbar__link.link Соглашения
+                i.material-icons expand_more
+
+            ul.navbar-dropdown__content
+                    li
+                        a(href="").navbar__link.link Соглашение 1
+                    li
+                        a(href="").navbar__link.link Соглашение 2
+                    li
+                        a(href="").navbar__link.link Соглашение 3

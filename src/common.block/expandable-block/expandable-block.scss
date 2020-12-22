@@ -1,0 +1,30 @@
+.expandable-block {
+  width: 266px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__icon {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include transition_global;
+
+    &_open {
+      transform: rotate(180deg);
+      @include transition_global;
+    }
+  }
+
+  &__content {
+    display: none;
+
+    &_open {
+      display: block;
+      @include transition_global;
+    }
+  }
+
+}

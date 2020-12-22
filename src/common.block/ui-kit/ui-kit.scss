@@ -1,0 +1,79 @@
+.ui-kit {
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  background-color: #E5E5E5;
+
+  &__box {
+    display: inline-block;
+    background-color: $bgc;
+  }
+
+  &__color-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 70px;
+
+    border-radius: 5px;
+
+  }
+
+  &__cards {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+
+  .dark_s100 {
+    background-color: $dark_s100;
+  }
+
+  .dark_s75 {
+    background-color: $dark_s75;
+  }
+
+  .dark_s50 {
+    background-color: $dark_s50;
+  }
+
+  .dark_s25 {
+    background-color: $dark_s25;
+  }
+
+  .dark_s5 {
+    background-color: $dark_s5;
+  }
+
+  .dark_s10 {
+    background-color: $dark_s10;
+  }
+
+  .purple {
+    background-color: $purple;
+  }
+
+  .green {
+    background-color: $green;
+  }
+
+  .gradient_purple {
+    background: $gradient_primary;
+  }
+
+  .gradient_green {
+    background: $gradient_secondary;
+  }
+
+}
+
+.ui-comment {
+  width: 100%;
+  background-color: $purple;
+}

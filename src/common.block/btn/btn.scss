@@ -1,0 +1,99 @@
+.btn {
+
+  // Purple Button
+
+  position: relative;
+  height: 44px;
+  box-sizing: border-box;
+
+  min-width: 99px;
+
+
+
+  border: none;
+  border-radius: 22px;
+
+  @include montserrat(12px, $bgc, bold);
+  text-transform: uppercase;
+
+  background: $gradient_primary;
+
+  cursor: pointer;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: $bgc;
+    opacity: 0.5;
+  }
+
+  &:active {
+    top: 1px;
+  }
+
+  // White Button
+  &_white {
+
+    //padding: {
+    //  left: 18px;
+    //  right: 18px;
+    //};
+
+    border: 2px solid transparent;
+
+    background: radial-gradient(circle, white, white), $gradient_primary;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    color: $purple;
+
+    &:hover {
+      color: $purple;
+      opacity: 0.5;
+    }
+  }
+
+  // Minimal Button
+  &_minimal {
+    width: auto;
+    height: auto;
+
+    padding: 0;
+
+    border: none;
+    background: none;
+
+    color: $purple;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+      color: $dark_s50;
+    }
+  }
+
+  // Send Button
+  &__send-wrapper {
+    position: relative;
+  }
+
+  &__send-icon {
+    position: absolute;
+    right: 0;
+
+    padding: 10px;
+
+    font-size: 24px;
+    color: $bgc;
+
+    cursor: pointer;
+
+  }
+
+  &_send {
+    min-width: 320px;
+  }
+}

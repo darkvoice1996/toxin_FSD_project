@@ -1,0 +1,42 @@
+.dropdown
+    input(
+        onclick="openDropdown()"
+        placeholder="Сколько гостей"
+    ).dropdown__header.input__dropdown.input
+    .dropdown__content
+
+        ul.dropdown__list
+
+            li.dropdown__item
+                .dropdown__key
+                    +label('Взрослые')
+
+                .counter
+                    button.counter__button.counter__minus -
+                    .counter__sum
+                        +label('0')
+                    button.counter__button.counter__plus   +
+
+            li.dropdown__item
+                .dropdown__key
+                    +label('Дети')
+
+                .counter
+                    button.counter__button.counter__minus -
+                    .counter__sum
+                        +label('0')
+                    button.counter__button.counter__plus   +
+
+            li.dropdown__item
+                .dropdown__key
+                    +label('Младенцы')
+
+                .counter
+                    button.counter__button.counter__minus -
+                    .counter__sum
+                        +label('0')
+                    button.counter__button.counter__plus   +
+
+            li.dropdown__item.dropdown__buttons
+                +btn_minimal('Очистить')
+                +btn_minimal('Применить')

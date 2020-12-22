@@ -1,0 +1,7 @@
+mixin expandable-block(title)
+    .expandable-block(onclick="expandBlock()")
+        +label(title)
+        .expandable-block__icon
+            i.material-icons expand_more
+    form(action="" method="").checkbox.expandable-block__content
+        block

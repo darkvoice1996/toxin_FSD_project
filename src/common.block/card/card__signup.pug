@@ -1,0 +1,19 @@
+form(action="" method="").card
+    +title("Регистрация аккаунта")
+    .card__fieldset
+        +input("user_name", "Имя", "text")
+        +input("user_surname", "Фамилия", "text")
+        +radio-button("user_gender")
+    .card__fieldset
+        +label("Дата Рождения")
+        +input_masked("user_birthday", "user_birthday", "Дата рождения")
+    .card__fieldset
+        +label("Данные для входа в сервис")
+        +input("user_email","Email", "text")
+        +input("user_password", "Пароль", "password")
+        +toggle-button("get_offers", "Получать спецпредложения", id)
+    .card__button
+        +btn_send("Перейти к оплате")
+    .card__footer
+        a(href="").link Уже есть аккаунт на Toxin?
+        +btn_white("Войти")

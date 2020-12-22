@@ -1,0 +1,34 @@
+.comment {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  grid-template-rows: 48px 1fr;
+  grid-gap: 10px;
+
+  background-color: $bgc;
+
+  &__user-photo {
+      width: 44px;
+      height: 44px;
+      border: 2px solid $bgc;
+      border-radius: 50%;
+  }
+
+  &__user-info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    line-height: 24px;
+
+  }
+
+  &__user-name {
+    font-weight: bold;
+  }
+
+  &__like-button {
+    padding-top: 1px;
+    display: flex;
+    justify-content: center;
+  }
+}

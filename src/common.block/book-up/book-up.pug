@@ -1,0 +1,32 @@
+form(action="" method="").card
+    .book-up__header
+        +room-info('888', '9990', 'люкс')
+
+    .card__fieldset
+        +date-dropdown("check-in", "Прибытие", "check-out", "Выезд")
+    .card__fieldset
+        +label("Гости")
+        include ../dropdown/dropdown__guests
+
+    .book-up__bill.room-bill
+        .room-bill__expense 9 990₽ х 4 суток
+        .room-bill__empty-space
+        .room-bill__price 39 960₽
+
+        .room-bill__expense Сбор за услуги: скидка 2 179₽
+        .room-bill__info i
+        .room-bill__price 0₽
+
+        .room-bill__expense Сбор за дополнительные услуги
+        .room-bill__info i
+        .room-bill__price 300₽
+    .room-bill__total
+        .room-bill__expense
+            +subtitle('Итого')
+        .room-bill__dots
+        .room-bill__price
+            +subtitle('38 081₽')
+
+
+    .card__fieldset
+        +btn_send('Забронировать')

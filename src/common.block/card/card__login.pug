@@ -1,0 +1,10 @@
+form(action="" method="POST").card
+    +title("Войти")
+    .card__fieldset
+        +input("user_email","Email", "text")
+        +input("user_password", "Пароль", "password")
+    .card__button
+        +btn_send("Войти")
+    .card__footer
+        a(href="").link Нет аккаунта на Toxin?
+        +btn_white("Создать")

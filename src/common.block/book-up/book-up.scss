@@ -1,0 +1,43 @@
+.room-bill {
+  margin-top: 12px;
+
+  display: grid;
+  grid-template-columns: 214px 20px 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 15px;
+
+  &__expense {
+    line-height: 18px;
+  }
+
+  &__info {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+
+    border: 1px solid $dark_s25;
+    border-radius: 50%;
+
+    color: $dark_s25;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  &__price {
+    text-align: right;
+    line-height: 18px;
+  }
+
+  &__total {
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+
+  &__dots {
+    margin-bottom: 4px;
+    border-bottom: 1px dotted $dark_s25;
+  }
+
+}

@@ -1,0 +1,45 @@
+{
+  "name": "toxin_fsd_project",
+  "version": "1.0.0",
+  "description": "Exam project of Alexandr Spiridonov",
+  "private": true,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkvoice1996/toxin_FSD_project.git"
+  },
+  "author": "Alexandr Spiridonov <darkvoice1996@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkvoice1996/toxin_FSD_project/issues"
+  },
+  "homepage": "https://github.com/darkvoice1996/toxin_FSD_project#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.4.0",
+    "css-loader": "^5.0.1",
+    "expose-loader": "^1.0.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.0.0-alpha.9",
+    "mini-css-extract-plugin": "^1.3.2",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "air-datepicker": "^2.2.3",
+    "jquery": "^3.5.1",
+    "jquery.maskedinput": "^1.4.1",
+    "material-design-icons": "^3.0.1",
+    "normalize.css": "^8.0.1",
+    "paginationjs": "^2.1.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 version"
+  ]
+}
