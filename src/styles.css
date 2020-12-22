@@ -3,6 +3,8 @@
 @import "assets/fonts/font-awesome/css/all.css";
 @import "~air-datepicker/dist/css/datepicker.css";
 @import "~paginationjs/dist/pagination.css";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 .ui-kit {
   background-color: #E5E5E5;
 }
@@ -1313,6 +1315,9 @@
 
 .room-number__number {
   color: #1F2041;
+  font-size: 19px;
+}
+.room-number__number_24px {
   font-size: 24px;
 }
 .room-number__number:before {
@@ -1329,6 +1334,109 @@
 .room-price__period {
   font-size: 12px;
   line-height: 18px;
+}
+
+.slick-carousel {
+  width: 100%;
+}
+.slick-carousel__wrapper {
+  width: 100%;
+  max-height: 151px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.slick-carousel__arrow {
+  width: 44px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slick-carousel__arrow_prev {
+  left: 0;
+  writing-mode: vertical-rl;
+}
+.slick-carousel__arrow_prev:hover {
+  text-shadow: -3px 0px 10px rgba(31, 32, 65, 0.75);
+}
+.slick-carousel__arrow_next {
+  right: 0;
+  writing-mode: vertical-rl;
+}
+.slick-carousel__arrow_next:hover {
+  text-shadow: 3px 0px 10px rgba(31, 32, 65, 0.75);
+}
+
+.slick-slider {
+  height: 150px;
+}
+
+.slick-dots {
+  z-index: 10;
+  right: 12px;
+  bottom: 10px;
+  text-align: right;
+}
+.slick-dots li {
+  height: 11px;
+  width: 11px;
+  margin: 0;
+}
+.slick-dots li button {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+}
+.slick-dots li button:before {
+  width: 6px;
+  height: 6px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: transparent;
+  opacity: 1;
+}
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 0.5;
+  background-color: #fff;
+}
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  line-height: 7px;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.room-card {
+  max-width: 270px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+.room-card__wrapper {
+  padding: 20px;
+}
+.room-card__rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.room-card__room-info {
+  padding-bottom: 11px;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+}
+.room-card__rating {
+  padding-top: 8px;
+}
+.room-card__feedbacks-number {
+  font-weight: bold;
 }
 
 body {

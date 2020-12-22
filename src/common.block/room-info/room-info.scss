@@ -22,7 +22,11 @@
   &__number {
 
     color: $dark_s100;
-    font-size: 24px;
+    font-size: 19px;
+
+    &_24px {
+      font-size: 24px;
+    }
 
     &:before {
       content: '№ ';

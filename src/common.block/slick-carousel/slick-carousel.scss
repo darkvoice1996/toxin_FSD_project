@@ -1,0 +1,97 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+.slick-carousel {
+  &__wrapper {
+    width: 100%;
+    max-height: 151px;
+    box-sizing: border-box;
+    overflow: hidden
+  }
+
+  width: 100%;
+
+  &__arrow {
+    width: 44px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    color: $bgc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_prev {
+      left: 0;
+      writing-mode: vertical-rl;
+      &:hover {
+        text-shadow: -3px 0px 10px $dark_s75;
+      }
+    }
+
+    &_next {
+      right: 0;
+      writing-mode: vertical-rl;
+      &:hover {
+        text-shadow: 3px 0px 10px $dark_s75;
+      }
+
+    }
+  }
+
+}
+
+.slick-slider {
+  height: 150px;
+}
+
+.slick-dots {
+  z-index: 10;
+  right: 12px;
+  bottom: 10px;
+
+  text-align: right;
+
+  li {
+    height: 11px;
+    width: 11px;
+    margin: 0;
+
+    button {
+      width: 6px;
+      height: 6px;
+
+      padding: 0;
+
+      &:before {
+        width: 6px;
+        height: 6px;
+
+        border: 1px solid $bgc;
+        border-radius: 50%;
+
+        color: transparent;
+        opacity: 1;
+      }
+
+      &:hover, &:focus {
+        outline: none;
+
+        &:before {
+          opacity: 0.5;
+          background-color: $bgc;
+        }
+      }
+    }
+
+    &.slick-active button:before {
+      color: $bgc;
+      line-height: 7px;
+      opacity: 1;
+      @include transition_global;
+    }
+  }
+}

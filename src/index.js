@@ -13,5 +13,5 @@ import './common.block/dropdown/dropdown'
 import './common.block/expandable-block/expandable-block'
 import './common.block/like-button/like-button'
 
-
+import './common.block/slick-carousel/slick-carousel'
 

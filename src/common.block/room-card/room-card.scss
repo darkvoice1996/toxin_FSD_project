@@ -1,0 +1,34 @@
+.room-card {
+  max-width: 270px;
+
+  border-radius: 4px;
+  overflow: hidden;
+
+  background-color: $bgc;
+
+  @include box-shadow_global;
+
+  &__wrapper {
+    padding: 20px;
+  }
+
+  &__rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__room-info {
+    padding-bottom: 11px;
+    border-bottom: 1px solid $dark_s10;
+  }
+
+  &__rating {
+    padding-top: 8px;
+  }
+
+  &__feedbacks-number {
+    font-weight: bold;
+  }
+
+}

@@ -53,13 +53,13 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: [
-                    // {
-                    //     loader: MiniCssExtractPlugin.loader,
-                    //     options: {
-                    //         publicPath: '',
-                    //     }
-                    // },
-                    'style-loader',
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '',
+                        }
+                    },
+                    // 'style-loader',
                     'css-loader',
                     'sass-loader'
                 ],

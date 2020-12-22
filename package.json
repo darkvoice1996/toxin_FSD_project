@@ -36,7 +36,8 @@
     "jquery.maskedinput": "^1.4.1",
     "material-design-icons": "^3.0.1",
     "normalize.css": "^8.0.1",
-    "paginationjs": "^2.1.5"
+    "paginationjs": "^2.1.5",
+    "slick-carousel": "^1.8.1"
   },
   "browserslist": [
     "> 1%",
