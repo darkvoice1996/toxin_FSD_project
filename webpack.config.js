@@ -27,11 +27,33 @@ module.exports = {
     },
 
     plugins: [
+        // PAGES
         new HTMLWebpackPlugin(
             {
+                filename: "ui-kit.html",
+                template: "./ui-kit.html"
+            },
+        ),
+        new HTMLWebpackPlugin(
+            {
+                filename: "index.html",
                 template: "./index.html"
             },
         ),
+        new HTMLWebpackPlugin(
+            {
+                filename: "search-room.html",
+                template: "./search-room.html"
+            },
+        ),
+        new HTMLWebpackPlugin(
+            {
+                filename: "room-details.html",
+                template: "./room-details.html"
+            },
+        ),
+
+
 
         new CleanWebpackPlugin(),
 
