@@ -4,8 +4,8 @@ import './styles.scss'
 
 import './common.block/input/input_masked'
 import './common.block/datepicker/datepicker'
-import 'paginationjs/src/pagination'
-import './common.block/pagination/pagination'
+// import 'paginationjs/src/pagination'
+// import './common.block/pagination/pagination'
 
 import './common.block/rate-button/rate-button'
 

@@ -1439,6 +1439,57 @@
   font-weight: bold;
 }
 
+.landing-page {
+  width: 100%;
+  height: 830px;
+  padding-top: 70px;
+  padding-bottom: 21px;
+  box-sizing: border-box;
+  background: url("./common.block/landing-page/landing-page__bg.jpg") bottom center no-repeat;
+  background-size: cover;
+}
+.landing-page__container {
+  max-width: 1160px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.landing-page__tagline {
+  width: 297px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  line-height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .landing-page {
+    height: 730px;
+  }
+
+  .landing-page__container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .landing-page {
+    height: 630px;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .landing-page {
+    height: 520px;
+    padding-top: 40px;
+  }
+
+  .landing-page__widget {
+    display: flex;
+    justify-content: center;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
