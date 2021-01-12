@@ -35,6 +35,8 @@
 @import "common.block/slick-carousel/slick-carousel";
 @import "common.block/room-card/room-card";
 @import "common.block/landing-page/landing-page.scss";
+@import "common.block/auth/auth";
+@import "common.block/room-gallery/room-gallery.scss";
 body {
   @include montserrat(14px, $dark_s75, 400);
   background-color: $bgc;

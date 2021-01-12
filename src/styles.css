@@ -469,8 +469,8 @@
 .footer-body__info {
   margin-top: -4px;
 }
-.footer-body__subscribe-text {
-  padding-top: 4px;
+.footer-body__text {
+  padding-top: 19px;
   padding-bottom: 9px;
 }
 
@@ -1490,6 +1490,29 @@
     justify-content: center;
   }
 }
+.auth__container {
+  width: 100%;
+  min-height: 700px;
+  background: transparent url("./common.block/auth/auth__bg.jpg") bottom center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.room-gallery {
+  width: 100%;
+  background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b" "a c";
+}
+.room-gallery:first-child {
+  background-color: red;
+  border: 5px red solid;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;

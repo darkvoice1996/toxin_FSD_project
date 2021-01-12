@@ -1,0 +1,17 @@
+.room-gallery {
+  width: 100%;
+  background-color: lightgreen;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  grid-template-areas: "a b"
+                       "a c";
+
+  &:first-child {
+    background-color: red;
+    border: 5px red solid;
+  }
+
+}

@@ -52,7 +52,18 @@ module.exports = {
                 template: "./room-details.html"
             },
         ),
-
+        new HTMLWebpackPlugin(
+            {
+                filename: "sign-in.html",
+                template: "./sign-in.html"
+            },
+        ),
+        new HTMLWebpackPlugin(
+            {
+                filename: "registration.html",
+                template: "./registration.html"
+            },
+        ),
 
 
         new CleanWebpackPlugin(),
