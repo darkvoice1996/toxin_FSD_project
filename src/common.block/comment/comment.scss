@@ -1,8 +1,14 @@
 .comment {
+  &__container {
+    display: grid;
+    grid-row-gap: 22px;
+  }
+
   display: grid;
   grid-template-columns: 48px 1fr;
   grid-template-rows: 48px 1fr;
-  grid-gap: 10px;
+  grid-row-gap: 10px;
+  grid-column-gap: 9px;
 
   background-color: $bgc;
 

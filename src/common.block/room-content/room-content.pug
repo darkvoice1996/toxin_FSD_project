@@ -5,27 +5,28 @@
             include ../room-feature/room-feature
 
         .room-content__item
-                p Впечатления от номере
+            h2.subtitle.room-content__title Впечатления от номере
         .room-content__item.room-content__feedback
             h2.subtitle.room-content__title Отзывы посетителей номера
-            .comment
-                img.comment__user-photo(src="../../assets/img/user-photo/user-photo.jpg" alt="../../assets/img/user-photo/user-photo.jpg")
-                .comment__user-info
-                    .comment__user-name Мурад Сарафанов
-                    .comment__last-activity 5 дней назад
-                .comment__like-button
-                    +like-button
-                .comment__text
-                    +text('Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
-            .comment
-                img.comment__user-photo(src="../../assets/img/user-photo/user-photo-2.jpg" alt="../../assets/img/user-photo/user-photo.jpg")
-                .comment__user-info
-                    .comment__user-name Патрисия Стёклышкова
-                    .comment__last-activity Неделю назад
-                .comment__like-button
-                    +like-button
-                .comment__text
-                    +text('Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
+            .comment__container
+                .comment
+                    img.comment__user-photo(src="../../assets/img/user-photo/user-photo.jpg" alt="../../assets/img/user-photo/user-photo.jpg")
+                    .comment__user-info
+                        .comment__user-name Мурад Сарафанов
+                        .comment__last-activity 5 дней назад
+                    .comment__like-button
+                        +like-button
+                    .comment__text
+                        +text('Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+                .comment
+                    img.comment__user-photo(src="../../assets/img/user-photo/user-photo-2.jpg" alt="../../assets/img/user-photo/user-photo.jpg")
+                    .comment__user-info
+                        .comment__user-name Патрисия Стёклышкова
+                        .comment__last-activity Неделю назад
+                    .comment__like-button
+                        +like-button
+                    .comment__text
+                        +text('Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
         .room-content__item
             h2.subtitle.room-content__title Правила
             ul.bullet-list

@@ -1155,6 +1155,7 @@
 }
 
 .room-feature {
+  max-width: 280px;
   display: grid;
 }
 .room-feature__item {
@@ -1249,8 +1250,13 @@
   display: grid;
   grid-template-columns: 48px 1fr;
   grid-template-rows: 48px 1fr;
-  grid-gap: 10px;
+  grid-row-gap: 10px;
+  grid-column-gap: 9px;
   background-color: #fff;
+}
+.comment__container {
+  display: grid;
+  grid-row-gap: 22px;
 }
 .comment__user-photo {
   width: 44px;
@@ -1544,11 +1550,12 @@
   }
 }
 .room-content__container {
-  max-width: 1170px;
+  max-width: 1160px;
   margin: 70px auto;
   display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 70px;
+  grid-row-gap: 30px;
+  grid-template-columns: 290px 1fr 380px;
 }
 .room-content__book-room {
   grid-column: 3/4;
