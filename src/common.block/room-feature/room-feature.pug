@@ -1,7 +1,22 @@
-mixin room-feature(icon, title, description)
-    .room-feature
+.room-feature
+
+    .room-feature__item
         .room-feature__icon
-            i.material-icons= icon
+            i.material-icons insert_emoticon
         .room-feature__text
-            .room-feature__title= title
-            .room-feature__description= description
+            .room-feature__title Комфорт
+            .room-feature__description Шумопоглащающие стены
+
+    .room-feature__item
+        .room-feature__icon
+            i.material-icons location_city
+        .room-feature__text
+            .room-feature__title Удобство
+            .room-feature__description Окно в каждой из спален
+
+    .room-feature__item
+        .room-feature__icon
+            i.material-icons whatshot
+        .room-feature__text
+            .room-feature__title Уют
+            .room-feature__description Номер оснащён камином

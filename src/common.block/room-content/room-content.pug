@@ -1,13 +1,40 @@
 .room-content
-    .room-content__item
-        p Сведения о номере
-    .room-content__item
-        p Впечатления от номере
-    .room-content__item.room-content__feedback
-        p Отзывы
-    .room-content__item
-        p Правила
-    .room-content__item
-        p Отмена
-    .room-content__item.room-content__book-room
-        p Забронировать
+    .room-content__container
+        .room-content__item
+            h2.subtitle.room-content__title Сведения о номере
+            include ../room-feature/room-feature
+
+        .room-content__item
+                p Впечатления от номере
+        .room-content__item.room-content__feedback
+            h2.subtitle.room-content__title Отзывы посетителей номера
+            .comment
+                img.comment__user-photo(src="../../assets/img/user-photo/user-photo.jpg" alt="../../assets/img/user-photo/user-photo.jpg")
+                .comment__user-info
+                    .comment__user-name Мурад Сарафанов
+                    .comment__last-activity 5 дней назад
+                .comment__like-button
+                    +like-button
+                .comment__text
+                    +text('Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+            .comment
+                img.comment__user-photo(src="../../assets/img/user-photo/user-photo-2.jpg" alt="../../assets/img/user-photo/user-photo.jpg")
+                .comment__user-info
+                    .comment__user-name Патрисия Стёклышкова
+                    .comment__last-activity Неделю назад
+                .comment__like-button
+                    +like-button
+                .comment__text
+                    +text('Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
+        .room-content__item
+            h2.subtitle.room-content__title Правила
+            ul.bullet-list
+                li.bullet-list__item Нельзя с питомцами
+                li.bullet-list__item Без вечеринок и мероприятий
+                li.bullet-list__item Время прибытия — после 13:00, a выезд до 12:00
+
+        .room-content__item
+            h2.subtitle.room-content__title Отмена
+            +text('Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.')
+        .room-content__item.room-content__book-room
+            include ../book-room/book-room

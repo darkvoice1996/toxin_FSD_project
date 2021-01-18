@@ -1,12 +1,29 @@
 .room-feature {
-  display: flex;
-  flex-flow: row nowrap;
+  display: grid;
+
+  &__item {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 19px 0;
+    border-bottom: 1px solid $dark_s10;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+  }
 
   &__icon {
     i {
       font-size: 48px;
       color: transparent;
     }
+
     background: $gradient_primary;
     -webkit-background-clip: text;
   }
@@ -20,5 +37,4 @@
   &__title {
     font-weight: bold;
   }
-
 }
