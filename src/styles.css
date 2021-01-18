@@ -1502,15 +1502,49 @@
 
 .room-gallery {
   width: 100%;
-  background-color: lightgreen;
+  height: 483px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "a b" "a c";
+  grid-gap: 0;
 }
-.room-gallery:first-child {
-  background-color: red;
-  border: 5px red solid;
+.room-gallery__img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.room-gallery__img img {
+  object-fit: cover;
+  position: absolute;
+}
+.room-gallery__big-img {
+  grid-row: 1/3;
+}
+.room-gallery__big-img img {
+  height: 100%;
+}
+
+@media (min-width: 1440px) {
+  .room-gallery__img img {
+    width: 100%;
+  }
+}
+.room-content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.room-content__item {
+  background-color: lightcoral;
+}
+.room-content__book {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+.room-content__feedback {
+  grid-column: 1/3;
 }
 
 body {

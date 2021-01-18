@@ -1,0 +1,18 @@
+.room-content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__item {
+    background-color: lightcoral;
+  }
+
+  &__book {
+    grid-column: 3/4;
+    grid-row: 1/4;
+  }
+
+  &__feedback {
+    grid-column: 1/3;
+  }
+}

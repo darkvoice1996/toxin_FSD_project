@@ -37,6 +37,8 @@
 @import "common.block/landing-page/landing-page.scss";
 @import "common.block/auth/auth";
 @import "common.block/room-gallery/room-gallery.scss";
+@import "common.block/room-content/room-content";
+
 body {
   @include montserrat(14px, $dark_s75, 400);
   background-color: $bgc;

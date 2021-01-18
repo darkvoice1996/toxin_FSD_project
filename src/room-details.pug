@@ -1,9 +1,6 @@
 extends html-template
 block content
-    .room-gallery
-        .room-gallery__img
-            img(src="./assets/img/room-photo/room-photo__888/img1.jpg" alt="")
-        .room-gallery__img
-            img(src="./assets/img/room-photo/room-photo__888/img2.jpg" alt="")
-        .room-gallery__img
-            img(src="./assets/img/room-photo/room-photo__888/img3.jpg" alt="")
+
+    include common.block/room-gallery/room-gallery
+
+    include common.block/room-content/room-content
