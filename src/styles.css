@@ -1539,7 +1539,7 @@
 .room-content__item {
   background-color: lightcoral;
 }
-.room-content__book {
+.room-content__book-room {
   grid-column: 3/4;
   grid-row: 1/4;
 }
