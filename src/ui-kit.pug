@@ -97,20 +97,21 @@ html(lang="en")
                 p.ui-comment dropdown__rooms
                 include common.block/dropdown/dropdown__rooms
 
-                +bullet-list('bullet list')
-                    +bullet-list__item('Нельзя с питомцами')
-                    +bullet-list__item('Без вечеринок и мероприятий')
-                    +bullet-list__item('Время прибытия — после 13:00, a выезд до 12:00')
+                ul.bullet-list
+                    +label('bullet list')
+                    li.bullet-list__item Нельзя с питомцами
+                    li.bullet-list__item Без вечеринок и мероприятий
+                    li.bullet-list__item Время прибытия — после 13:00, a выезд до 12:00
 
-                +room-feature('insert_emoticon', 'Комфорт', 'Шумопоглащающие стены')
-                +room-feature('location_city', 'Удобство', 'Окно в каждой из спален')
-                +expandable-block('expandable checkbox list')
-                    +checkbox__item('exp1','exp2','Завтрак')
-                    +checkbox__item('exp3','exp3','Письменный стол')
-                    +checkbox__item('exp4','exp4','Стул для кормления')
-                    +checkbox__item('exp5','exp5','Кроватка')
-                    +checkbox__item('exp6','exp6','Телевизор')
-                    +checkbox__item('exp7','exp7','Шампунь')
+
+                include common.block/room-feature/room-feature
+                    +expandable-block('expandable checkbox list')
+                        +checkbox__item('exp1','exp2','Завтрак')
+                        +checkbox__item('exp3','exp3','Письменный стол')
+                        +checkbox__item('exp4','exp4','Стул для кормления')
+                        +checkbox__item('exp5','exp5','Кроватка')
+                        +checkbox__item('exp6','exp6','Телевизор')
+                        +checkbox__item('exp7','exp7','Шампунь')
 
             // Form  buttons
             .ui-kit__box
