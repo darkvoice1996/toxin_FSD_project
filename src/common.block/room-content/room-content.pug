@@ -5,9 +5,13 @@
             include ../room-feature/room-feature
 
         .room-content__item
-            h2.subtitle.room-content__title Впечатления от номере
+            h2.subtitle.room-content__title Впечатления от номера
+            include ../pie-chart/pie-chart
+
         .room-content__item.room-content__feedback
-            h2.subtitle.room-content__title Отзывы посетителей номера
+            .room-content__feedback-header
+                h2.subtitle.room-content__title Отзывы посетителей номера
+                p.text.text_s50 2 отзыва
             .comment__container
                 .comment
                     img.comment__user-photo(src="../../assets/img/user-photo/user-photo.jpg" alt="../../assets/img/user-photo/user-photo.jpg")

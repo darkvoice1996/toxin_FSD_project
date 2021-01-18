@@ -22,6 +22,10 @@
   @include montserrat(14px, $dark_s75, 400);
   line-height: 24px;
   margin: 0;
+
+  &_s50 {
+    color: $dark_s50;
+  }
 }
 
 .link {

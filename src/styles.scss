@@ -38,6 +38,7 @@
 @import "common.block/auth/auth";
 @import "common.block/room-gallery/room-gallery.scss";
 @import "common.block/room-content/room-content";
+@import "common.block/pie-chart/pie-chart";
 
 body {
   @include montserrat(14px, $dark_s75, 400);

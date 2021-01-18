@@ -21,6 +21,12 @@
     grid-column: 1/3;
   }
 
+  &__feedback-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
   &__title {
     margin-bottom: 20px;
   }
