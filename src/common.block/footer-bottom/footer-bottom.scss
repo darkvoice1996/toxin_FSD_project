@@ -7,9 +7,6 @@
   &__container {
     height: 70px;
     width: 100%;
-    max-width: 1160px;
-
-    margin: 0 auto;
 
     display: flex;
     flex-flow: row nowrap;
@@ -28,11 +25,7 @@
 
 }
 
-@media (max-width: 1200px) {
-  .footer-bottom__container {
-    margin: 0 15px;
-  }
-}
+
 
 @media (max-width: 768px) {
   .footer-bottom {

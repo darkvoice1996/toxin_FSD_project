@@ -40,8 +40,25 @@
 @import "common.block/room-content/room-content";
 @import "common.block/pie-chart/pie-chart";
 @import "common.block/search-room/search-room.scss";
+@import "common.block/rooms-panel/rooms-panel";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   @include montserrat(14px, $dark_s75, 400);
   background-color: $bgc;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 15px;
+  }
 }

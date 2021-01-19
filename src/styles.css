@@ -326,7 +326,6 @@
 }
 .header__container {
   height: 70px;
-  max-width: 1160px;
   margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
@@ -337,11 +336,6 @@
   flex-grow: 1;
 }
 
-@media (max-width: 1200px) {
-  .header__container {
-    margin: 0 15px;
-  }
-}
 @media (min-width: 992px) {
   .burger-button {
     display: none;
@@ -401,8 +395,6 @@
 .footer-bottom__container {
   height: 70px;
   width: 100%;
-  max-width: 1160px;
-  margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -415,11 +407,6 @@
   text-align: center;
 }
 
-@media (max-width: 1200px) {
-  .footer-bottom__container {
-    margin: 0 15px;
-  }
-}
 @media (max-width: 768px) {
   .footer-bottom__container {
     height: 367px;
@@ -462,8 +449,6 @@
   padding-bottom: 90px;
 }
 .footer-body__container {
-  max-width: 1160px;
-  margin: 0 auto;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 260px 1fr 260px;
@@ -477,11 +462,6 @@
   padding-bottom: 9px;
 }
 
-@media (max-width: 1200px) {
-  .footer-body__container {
-    margin: 0 15px;
-  }
-}
 @media (max-width: 1020px) {
   .footer-body__container {
     grid-template-columns: 1fr 1fr;
@@ -1435,11 +1415,14 @@
 }
 
 .room-card {
-  max-width: 270px;
+  min-width: 270px;
   border-radius: 4px;
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+.room-card__slider {
+  width: 100%;
 }
 .room-card__wrapper {
   padding: 20px;
@@ -1641,17 +1624,23 @@
 }
 
 .search-room__container {
-  max-width: 1160px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 266px 1fr;
-  grid-column-gap: 60px;
-}
-.search-room__rooms {
-  background-color: lightcoral;
+  grid-column-gap: calc(100vw / 24);
 }
 .search-room__filter {
   background-color: lightgreen;
+}
+
+.rooms-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-column-gap: 12px;
+  grid-row-gap: 20px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -1660,6 +1649,17 @@ body {
   font-weight: 400;
   color: rgba(31, 32, 65, 0.75);
   background-color: #fff;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 15px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

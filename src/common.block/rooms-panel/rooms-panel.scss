@@ -1,0 +1,7 @@
+.rooms-panel {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-column-gap: 12px;
+  grid-row-gap: 20px;
+}
+

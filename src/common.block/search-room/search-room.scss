@@ -1,16 +1,11 @@
 .search-room {
   &__container {
-    max-width: 1160px;
-    margin: 0 auto;
-
     display: grid;
     grid-template-columns: 266px 1fr;
-    grid-column-gap: 60px;
-
+    grid-column-gap: calc(100vw / 24);
   }
 
   &__rooms {
-    background-color: lightcoral;
   }
 
   &__filter {

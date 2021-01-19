@@ -4,7 +4,6 @@
 
   &__container {
     height: 70px;
-    max-width: 1160px;
 
     margin: 0 auto;
 
@@ -22,11 +21,7 @@
 
 }
 
-@media (max-width: 1200px) {
-  .header__container {
-    margin: 0 15px;
-  }
-}
+
 
 @media (min-width: 992px) {
   .burger-button {
