@@ -1640,6 +1640,20 @@
   background: linear-gradient(#909090 0%, #3d4975 100%);
 }
 
+.search-room__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 266px 1fr;
+  grid-column-gap: 60px;
+}
+.search-room__rooms {
+  background-color: lightcoral;
+}
+.search-room__filter {
+  background-color: lightgreen;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
