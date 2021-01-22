@@ -1071,15 +1071,23 @@
   width: 40px;
 }
 
-.paginationjs .paginationjs-pages li:last-child {
+.paginationjs .paginationjs-pages li:last-child,
+.paginationjs-prev {
   background: url("./common.block/pagination/arrow_forward.svg") center center no-repeat, linear-gradient(180deg, #6fcf97 0%, #66D2EA 100%);
   background-size: 18px;
 }
-.paginationjs .paginationjs-pages li:last-child a {
+.paginationjs .paginationjs-pages li:last-child a,
+.paginationjs-prev a {
   color: transparent;
 }
-.paginationjs .paginationjs-pages li:last-child a:hover {
+.paginationjs .paginationjs-pages li:last-child a:hover,
+.paginationjs-prev a:hover {
   color: transparent;
+}
+
+.paginationjs-prev {
+  background: url("./common.block/pagination/arrow_forward.svg") center center no-repeat, linear-gradient(180deg, #6fcf97 0%, #66D2EA 100%);
+  transform: rotate(180deg);
 }
 
 .paginationjs .paginationjs-pages li > a:hover {
