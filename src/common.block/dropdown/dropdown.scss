@@ -1,5 +1,5 @@
 .dropdown {
-  max-width: 320px;
+  max-width: 266px;
 
   box-sizing: border-box;
 
@@ -13,7 +13,7 @@
   &__content {
     z-index: 1;
 
-    width: 320px;
+    max-width: 266px;
 
     padding: 3px 7px 0 13px;
 
