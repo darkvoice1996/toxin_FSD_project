@@ -322,7 +322,7 @@
 .header {
   background-color: #fff;
   width: 100%;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
 }
 .header__container {
   height: 70px;
@@ -1006,6 +1006,10 @@
   color: #bc9cff;
 }
 
+.pagination_temporary-hidden {
+  display: none;
+}
+
 .pagination {
   height: 72px;
   display: flex;
@@ -1211,7 +1215,7 @@
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   background-color: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
 }
 .card__fieldset {
   margin-top: 20px;
@@ -1426,7 +1430,7 @@
   border-radius: 4px;
   overflow: hidden;
   background-color: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
 }
 .room-card__slider {
   width: 100%;
@@ -1644,6 +1648,15 @@
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-column-gap: 12px;
   grid-row-gap: 20px;
+}
+.rooms-panel__wrapper {
+  margin: 29px 0 70px 0;
+}
+.rooms-panel__title {
+  margin-bottom: 23px;
+}
+.rooms-panel__pagination {
+  margin-top: 40px;
 }
 
 * {

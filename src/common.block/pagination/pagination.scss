@@ -1,4 +1,10 @@
 @import "~paginationjs/dist/pagination.css";
+
+// Чтобы всё работало нужно удалить этот блок
+.pagination_temporary-hidden {
+  display: none;
+}
+
 .pagination {
   height: 72px;
 

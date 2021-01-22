@@ -22,5 +22,5 @@ $gradient_secondary: linear-gradient(180deg, $green 0%, #66D2EA 100%);
 }
 
 @mixin box-shadow_global {
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05)
 }
