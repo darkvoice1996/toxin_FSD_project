@@ -6,7 +6,7 @@ $(document).ready(function(){
         autoplay: true,
         dots: true,
         // dotsClass: 'slick-dots slick-carousel__dots',
-        speed: 150,
+        speed: 600,
         prevArrow: '<i class="material-icons slick-carousel__arrow slick-carousel__arrow_prev">expand_more</i><div></div>',
         nextArrow: '<i class="material-icons slick-carousel__arrow slick-carousel__arrow_next">expand_less</i>'
         }

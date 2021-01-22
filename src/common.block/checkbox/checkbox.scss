@@ -6,10 +6,12 @@
   }
 
   &__item {
-    padding-bottom: 7px;
+    padding-bottom: 8px;
+    color: $dark_s50;
 
     display: grid;
     grid-template-columns: 29px 236px;
+
   }
 
   input {
@@ -44,13 +46,14 @@
       line-height: 18px;
 
       &_bold {
+        color: $dark_s75;
         font-weight: bold;
       }
     }
 
   &__decription {
-
     margin-top: 2px;
+
     font-size: 12px;
     line-height: 14px;
   }

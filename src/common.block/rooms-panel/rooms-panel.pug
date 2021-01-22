@@ -1,167 +1,232 @@
-.rooms-panel__wrapper
-    h1.title.rooms-panel__title Номера, которые мы для вас подобрали
+h1.title.rooms-panel__title Номера, которые мы для вас подобрали
 
-    .rooms-panel
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('888', '9 990', 'люкс')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('840', '9 990')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('888', '9 990', 'люкс')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('840', '9 990')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('840', '9 990')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('840', '9 990')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('840', '9 990')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('840', '9 990')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('840', '9 990')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('840', '9 990')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('840', '9 990')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
-        .rooms-panel__item
-            .room-card
-                .room-card__slider
-                    include ../slick-carousel/slick-carousel
-                .room-card__wrapper
-                    .room-card__room-info
-                        +room-info('840', '9 990')
-                    .room-card__rating
-                        .room-card__rate-button
-                            +rate-button
-                        .room-card__feedbacks
-                            span.room-card__feedbacks-number 145
-                            span &#32;Отзывов
+.rooms-panel
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img1.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img2.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img3.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img4.jpg" alt="")
+
+            .room-card__wrapper
+                .room-card__room-info
+                    +room-info('888', '9 990', 'люкс')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img5.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img6.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img7.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img8.jpg" alt="")
+
+            .room-card__wrapper
+                .room-card__room-info
+                    +room-info('840', '9 990')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img9.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img10.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img11.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img12.jpg" alt="")
+
+            .room-card__wrapper
+                .room-card__room-info
+                    +room-info('980', '8 500', 'люкс')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img13.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img14.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img15.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img16.jpg" alt="")
+            .room-card__wrapper
+                .room-card__room-info
+                    +room-info('856', '3 390')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img17.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img18.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img19.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img20.jpg" alt="")
+            .room-card__wrapper
+                .room-card__room-info
+                    +room-info('982', '5 800')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img21.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img1.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img2.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img3.jpg" alt="")
+            .room-card__wrapper
+                .room-card__room-info
+                    +room-info('678', '5 500')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img4.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img5.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img6.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img7.jpg" alt="")
+            .room-card__wrapper
+                .room-card__room-info
+                    +room-info('450', '5300')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img8.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img9.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img10.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img11.jpg" alt="")
+            .room-card__wrapper
+                .room-card__room-info
+                    +room-info('350', '5 000')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img12.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img13.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img14.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img15.jpg" alt="")
+
+        .room-card__wrapper
+                .room-card__room-info
+                    +room-info('666', '5 500')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
+
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img16.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img17.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img18.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img19.jpg" alt="")
+            .room-card__wrapper
+                .room-card__room-info
+                    +room-info('450', '5 300')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img20.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img21.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img1.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img2.jpg" alt="")
+
+            .room-card__wrapper
+                .room-card__room-info
+                    +room-info('350', '5 000')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
+    .rooms-panel__item
+        .room-card
+            .room-card__slider
+                .slick-carousel__wrapper
+                    .slick-carousel
+                        img(src="../../assets/img/room-photo/img3.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img4.jpg" alt="")
+                        img(src="../../assets/img/room-photo/img5.jpg" alt="")
+
+            .room-card__wrapper
+                .room-card__room-info
+                    +room-info('352', '5 000')
+                .room-card__rating
+                    .room-card__rate-button
+                        +rate-button
+                    .room-card__feedbacks
+                        span.room-card__feedbacks-number 145
+                        span &#32;Отзывов
 
 
-    // Для того, чтобы соответветствовало макету без функциональности, конткент был отключен через класс класс .pagination_temporary-hidden
-    #pagination-data-container.pagination_temporary-hidden There will be page content
-    .pagination.rooms-panel__pagination
-        #pagination-bar
-        .pagination__footer.text 1 - 15 из 100+ вариантов аренды
+// Для того, чтобы соответветствовало макету без функциональности, конткент был отключен через класс класс .pagination_temporary-hidden
+#pagination-data-container.pagination_temporary-hidden There will be page content
+.pagination.rooms-panel__pagination
+    #pagination-bar
+    .pagination__footer.text 1 - 15 из 100+ вариантов аренды

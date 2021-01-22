@@ -1,0 +1,9 @@
+.rooms-filter {
+  &__item {
+    margin-bottom: 30px;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}

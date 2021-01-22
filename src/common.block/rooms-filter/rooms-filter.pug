@@ -1,0 +1,97 @@
+form.rooms-filter__container
+    .rooms-filter__item
+        label(for="DatesOfStay").label.input__label Даты пребывания в отеле
+        input(type="text" id="DatesOfStay" name="DatesOfStay"
+            placeholder="ДД.ММ.ГГГ"
+            data-range="true"
+            data-multiple-dates-separator=" - "
+            data-toggle-selected="false"
+            spellcheck="false").input.input__dropdown.input_narrow.datepicker-here.input_narrow
+
+    .rooms-filter__item
+        .dropdown
+            label(for="GuestsAmount").label.input__label Гости
+            input(
+                id="GuestsAmount"
+                name="GuestsAmount"
+                onclick="openDropdown()"
+                placeholder="Сколько гостей"
+            ).dropdown__header.input__dropdown.input
+            .dropdown__content
+
+                ul.dropdown__list
+
+                    li.dropdown__item
+                        .dropdown__key
+                            +label('Взрослые')
+
+                        .counter
+                            button.counter__button.counter__minus -
+                            .counter__sum
+                                +label('0')
+                            button.counter__button.counter__plus   +
+
+                    li.dropdown__item
+                        .dropdown__key
+                            +label('Дети')
+
+                        .counter
+                            button.counter__button.counter__minus -
+                            .counter__sum
+                                +label('0')
+                            button.counter__button.counter__plus   +
+
+                    li.dropdown__item
+                        .dropdown__key
+                            +label('Младенцы')
+
+                        .counter
+                            button.counter__button.counter__minus -
+                            .counter__sum
+                                +label('0')
+                            button.counter__button.counter__plus   +
+
+                    li.dropdown__item.dropdown__buttons
+                        +btn_minimal('Очистить')
+                        +btn_minimal('Применить')
+
+    .rooms-filter__item
+        include ../range-slider/range-slider
+
+    .rooms-filter__item
+        include ../checkbox/checkbox
+
+    .rooms-filter__item
+        include ../checkbox/checkbox_rich
+
+    .rooms-filter__item
+        .expandable-block(onclick="expandBlock()")
+            label.label.input__label Дополнительные удобства
+            .expandable-block__icon
+                i.material-icons expand_more
+        .checkbox.expandable-block__content
+            label(for="breakfast").checkbox__item
+                input(type="checkbox" id="breakfast" name="breakfast")
+                .checkbox__custom-input
+                .checkbox__text Завтрак
+            label(for="writingDesk").checkbox__item
+                input(type="checkbox" id="writingDesk" name="writingDesk")
+                .checkbox__custom-input
+                .checkbox__text Письменный стол
+            label(for="babyChair").checkbox__item
+                input(type="checkbox" id="babyChair" name="babyChair")
+                .checkbox__custom-input
+                .checkbox__text Стул для кормления
+            label(for="babyBed").checkbox__item
+                input(type="checkbox" id="babyBed" name="babyBed")
+                .checkbox__custom-input
+                .checkbox__text Кроватка
+            label(for="TV").checkbox__item
+                input(type="checkbox" id="TV" name="TV")
+                .checkbox__custom-input
+                .checkbox__text Телевизор
+            label(for="shampoo").checkbox__item
+                input(type="checkbox" id="shampoo" name="shampoo")
+                .checkbox__custom-input
+                .checkbox__text Шампунь
+

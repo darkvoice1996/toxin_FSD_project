@@ -82,11 +82,25 @@ html(lang="en")
                 p.ui-comment +input_masked(8445, 'masked text field')
                 +input_masked(8445, 'masked text field')
 
-                p.ui-comment +date-dropdown('id_frfdf', 'date dropdown', 'id_2ffd', 'date dropdown')
-                +date-dropdown('id_frfdf', 'date dropdown', 'id_2ffd', 'date dropdown')
+                p.ui-comment Date-dropdown with 2 dates
+                .date-dropdown__container
+                    .date-dropdown__item
+                        label(for="checkOut").label.input__label Date-dropdown
+                        input(type="text" id="checkOut" name="checkIn" placeholder="ДД.ММ.ГГГГ" spellcheck="false").datepicker-here.date-period-picker__item.input.input__dropdown.date-dropdown__input
+                    .date-dropdown__item
+                        label(for="checkIn").label.input__label Date-dropdown
+                        input(type="text" id="checkIn" name="checkOut" placeholder="ДД.ММ.ГГГГ" spellcheck="false").datepicker-here.date-period-picker__item.input.input__dropdown.date-dropdown__input
 
-                p.ui-comment +date-dropdown_period('id_df4e', 'filter dropdown')
-                +date-dropdown_period('id_df4e', 'filter dropdown')
+
+
+                p.ui-comment Date Dropdown Period
+                label(for="DatesOfStay").label.input__label Даты пребывания в отеле
+                input(type="text" id="DatesOfStay" name="DatesOfStay"
+                    placeholder="ДД.ММ.ГГГ"
+                    data-range="true"
+                    data-multiple-dates-separator=" - "
+                    data-toggle-selected="false"
+                    spellcheck="false").input.input__dropdown.input_narrow.datepicker-here.input_narrow
 
             // DROPDOWNS
             .ui-kit__box
@@ -105,13 +119,33 @@ html(lang="en")
 
 
                 include common.block/room-feature/room-feature
-                    +expandable-block('expandable checkbox list')
-                        +checkbox__item('exp1','exp2','Завтрак')
-                        +checkbox__item('exp3','exp3','Письменный стол')
-                        +checkbox__item('exp4','exp4','Стул для кормления')
-                        +checkbox__item('exp5','exp5','Кроватка')
-                        +checkbox__item('exp6','exp6','Телевизор')
-                        +checkbox__item('exp7','exp7','Шампунь')
+                include common.block/expandable-block/expandable-block
+
+                +expandable-block('expandable checkbox list')
+                    label(for="breakfast").checkbox__item
+                        input(type="checkbox" id="breakfast" name="breakfast")
+                        .checkbox__custom-input
+                        .checkbox__text Завтрак
+                    label(for="writingDesk").checkbox__item
+                        input(type="checkbox" id="writingDesk" name="writingDesk")
+                        .checkbox__custom-input
+                        .checkbox__text Письменный стол
+                    label(for="babyChair").checkbox__item
+                        input(type="checkbox" id="babyChair" name="babyChair")
+                        .checkbox__custom-input
+                        .checkbox__text Стул для кормления
+                    label(for="babyBed").checkbox__item
+                        input(type="checkbox" id="babyBed" name="babyBed")
+                        .checkbox__custom-input
+                        .checkbox__text Кроватка
+                    label(for="TV").checkbox__item
+                        input(type="checkbox" id="TV" name="TV")
+                        .checkbox__custom-input
+                        .checkbox__text Телевизор
+                    label(for="shampoo").checkbox__item
+                        input(type="checkbox" id="shampoo" name="shampoo")
+                        .checkbox__custom-input
+                        .checkbox__text Шампунь
 
             // Form  buttons
             .ui-kit__box
@@ -119,14 +153,12 @@ html(lang="en")
                 //p.ui-comment +checkbox("Checkbox")
                 //+checkbox("Checkbox")
 
-                +checkbox('checkbox')
-                    +checkbox__item('ch1', 'ch1', 'Можно курить')
-                    +checkbox__item('ch2', 'ch2', 'Можно с питомцами')
-                    +checkbox__item('ch3', 'ch3', 'Можно пригласить гостей (до 10 человек)')
+                include common.block/checkbox/checkbox
+                include common.block/checkbox/checkbox_rich
 
-                +checkbox('rich checkbox')
-                    +checkbox-rich__item('ch1r', 'ch1r', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
-                    +checkbox-rich__item('ch2r', 'ch2r', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.')
+                //+checkbox('rich checkbox')
+                //    +checkbox-rich__item('ch1r', 'ch1r', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
+                //    +checkbox-rich__item('ch2r', 'ch2r', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.')
 
                 +radio-button("ui_radio")
 

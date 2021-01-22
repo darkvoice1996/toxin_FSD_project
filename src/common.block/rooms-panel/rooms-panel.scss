@@ -1,8 +1,4 @@
 .rooms-panel {
-  &__wrapper {
-    margin: 29px 0 70px 0;
-  }
-
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-column-gap: 12px;

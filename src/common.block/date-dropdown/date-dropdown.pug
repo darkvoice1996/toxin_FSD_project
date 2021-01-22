@@ -1,19 +1,19 @@
-mixin date-dropdown_period(name, id, label)
-    label(for="id").label.input__label= label
-    input(type="text" id="" name=name
-        placeholder="ДД.ММ.ГГГ"
-        data-range="true"
-        data-multiple-dates-separator=" - "
-        data-toggle-selected="false"
-        spellcheck="false").input.input__dropdown.input_narrow.datepicker-here.input_narrow
+// Date-dropdown period
+label(for="DatesOfStay").label.input__label Даты пребывания в отеле
+input(type="text" id="DatesOfStay" name="DatesOfStay"
+    placeholder="ДД.ММ.ГГГ"
+    data-range="true"
+    data-multiple-dates-separator=" - "
+    data-toggle-selected="false"
+    spellcheck="false").input.input__dropdown.input_narrow.datepicker-here.input_narrow
 
-mixin date-dropdown(name_1, label_1, name_2, label_2)
-    .date-dropdown__container
-        .date-dropdown__item
-            label.label.input__label= label_1
-            input(type="text" name=name_1 placeholder="ДД.ММ.ГГГГ" spellcheck="false").datepicker-here.date-period-picker__item.input.input__dropdown.date-dropdown__input
-        .date-dropdown__item
-            label.label.input__label= label_2
-            input(type="text" name=name_2 placeholder="ДД.ММ.ГГГГ" spellcheck="false").datepicker-here.date-period-picker__item.input.input__dropdown.date-dropdown__input
+// Date-dropdown with 2 dates
+.date-dropdown__container
+    .date-dropdown__item
+        label(for="checkIn").label.input__label Прибытие
+        input(type="text" id="checkIn" name="checkOut" placeholder="ДД.ММ.ГГГГ" spellcheck="false").datepicker-here.date-period-picker__item.input.input__dropdown.date-dropdown__input
 
+    .date-dropdown__item
+        label(for="checkOut").label.input__label Выезд
+        input(type="text" id="checkOut" name="checkIn" placeholder="ДД.ММ.ГГГГ" spellcheck="false").datepicker-here.date-period-picker__item.input.input__dropdown.date-dropdown__input
 

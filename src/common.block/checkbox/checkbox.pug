@@ -1,20 +1,17 @@
-mixin checkbox(title)
-
-    form(action="" method="").checkbox
-        .checkbox__title
-            +label(title)
-        block
-
-mixin checkbox__item(id, name, text)
-    label(for=id).checkbox__item
-        input(type="checkbox" id=id name=name)
+.checkbox
+    h3.label.checkbox__title правила дома
+    label(for="allowedSmoking").checkbox__item
+        input(type="checkbox" id="allowedSmoking" name="allowedSmoking")
         .checkbox__custom-input
-        .checkbox__text= text
-
-mixin checkbox-rich__item(id, name, text, description)
-    label(for=id).checkbox__item
-        input(type="checkbox" id=id name=name)
+        .checkbox__text Можно курить
+    label(for="allowedPets").checkbox__item
+        input(type="checkbox" id="allowedPets" name="allowedPets")
         .checkbox__custom-input
-        .checkbox__text.checkbox__text_bold= text
-        .checkbox__empthy-space
-        .checkbox__decription= description
+        .checkbox__text Можно с питомцами
+    label(for="allowedGuests").checkbox__item
+        input(type="checkbox" id="allowedGuests" name="allowedGuests")
+        .checkbox__custom-input
+        .checkbox__text Можно пригласить гостей (до 10 человек)
+
+
+

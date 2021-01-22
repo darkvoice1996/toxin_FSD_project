@@ -1,7 +1,15 @@
 form(action="search-room.html" method="").card
     +title("Найдём номера под ваши пожелания")
     .card__fieldset
-        +date-dropdown("check-in", "Прибытие", "check-out", "Выезд")
+        .date-dropdown__container
+            .date-dropdown__item
+                label(for="checkIn").label.input__label Прибытие
+                input(type="text" id="checkIn" name="checkOut" placeholder="ДД.ММ.ГГГГ" spellcheck="false").datepicker-here.date-period-picker__item.input.input__dropdown.date-dropdown__input
+
+            .date-dropdown__item
+                    label(for="checkOut").label.input__label Выезд
+                    input(type="text" id="checkOut" name="checkIn" placeholder="ДД.ММ.ГГГГ" spellcheck="false").datepicker-here.date-period-picker__item.input.input__dropdown.date-dropdown__input
+
     .card__fieldset
         +label("Гости")
         include ../dropdown/dropdown__guests
