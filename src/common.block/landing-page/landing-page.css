@@ -1,17 +1,17 @@
 /* Error: Undefined variable.
  *   ,
- * 2 |   background: url("./common.block/pagination/arrow_forward.svg") center center no-repeat, $gradient_secondary;
+ * 2 |   background: url('./common.block/pagination/arrow_forward.svg') center center no-repeat, $gradient_secondary;
  *   |                                                                                           ^^^^^^^^^^^^^^^^^^^
  *   '
  *   landing-page.scss 2:91  root stylesheet */
 
 body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
+  font-family: 'Source Code Pro', 'SF Mono', Monaco, Inconsolata, 'Fira Mono',
+      'Droid Sans Mono', monospace, monospace;
   white-space: pre;
   display: block;
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: Undefined variable.\a   \2577 \a 2 \2502    background: url("./common.block/pagination/arrow_forward.svg") center center no-repeat, $gradient_secondary;\d\a   \2502                                                                                            ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   landing-page.scss 2:91  root stylesheet';
+  content: 'Error: Undefined variable.\a   \2577 \a 2 \2502    background: url('./common.block/pagination/arrow_forward.svg') center center no-repeat, $gradient_secondary;\d\a   \2502                                                                                            ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   landing-page.scss 2:91  root stylesheet';
 }

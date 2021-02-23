@@ -1,6 +1,6 @@
 .auth__containter {
   width: 100%;
-  background: transparent url("./src/common.block/auth/auth__bg.jpg") center center no-repeat;
+  background: transparent url('./src/common.block/auth/auth__bg.jpg') center center no-repeat;
 }
 
 /*# sourceMappingURL=auth.css.map */
