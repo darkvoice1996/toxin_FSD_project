@@ -22,7 +22,7 @@
 
 @mixin montserrat($font-size: 14px, $color, $font-weight: 400) {
   font: {
-    family: 'Montserrat', sans-serif;
+    family: 'Montserrat', Roboto, sans-serif;
     size: $font-size;
     weight: $font-weight;
   }

@@ -113,7 +113,7 @@
 
 .title {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #1F2041;
@@ -121,7 +121,7 @@
 }
 
 .subtitle {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 19px;
   font-weight: 700;
   color: #1F2041;
@@ -131,7 +131,7 @@
 
 .label {
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 12px;
   font-weight: 700;
   color: #1F2041;
@@ -141,7 +141,7 @@
 }
 
 .text {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.75);
@@ -153,7 +153,7 @@
 }
 
 .link {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #1F2041;
@@ -165,7 +165,7 @@
   text-shadow: 0 0 5px rgba(31, 32, 65, 0.25);
 }
 .link_light {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.5);
@@ -178,7 +178,7 @@
   min-width: 99px;
   border: none;
   border-radius: 22px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: #fff;
@@ -268,7 +268,7 @@
   text-decoration: none;
 }
 .navbar__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.5);
@@ -276,7 +276,7 @@
   padding: 10px;
 }
 .navbar__link_bold {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: rgba(31, 32, 65, 0.75);
@@ -312,7 +312,7 @@
   border-left: 1px rgba(31, 32, 65, 0.1) solid;
 }
 .auth-user__name {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 14px;
   font-weight: normal;
   color: rgba(31, 32, 65, 0.5);
@@ -547,7 +547,7 @@
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.75);
@@ -606,7 +606,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.5);
@@ -622,7 +622,7 @@
 .datepicker--nav-title {
   padding: 0;
   border: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 19px;
   font-weight: 400;
   color: #1F2041;
@@ -642,7 +642,7 @@
 .datepicker--cell.-current-, .datepicker--cell.-current-.-focus-, .datepicker--cell.-current-.-in-range- {
   border: none;
   border-radius: 50%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: inherit;
   font-weight: 400;
   color: #fff;
@@ -743,7 +743,7 @@
 }
 .datepicker--day-name {
   height: 40px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: inherit;
   font-weight: 400;
   color: #bc9cff;
@@ -756,7 +756,7 @@
 .dropdown {
   max-width: 320px;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.75);
@@ -996,7 +996,7 @@
   width: 18px;
   height: 18px;
   padding: 4px 1px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 10px;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.25);
@@ -1018,7 +1018,7 @@
 }
 
 .paginationjs {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #fff;
@@ -1585,7 +1585,7 @@
 }
 .pie-chart__text {
   z-index: 1;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: #bc9cff;
@@ -1658,7 +1658,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.75);
