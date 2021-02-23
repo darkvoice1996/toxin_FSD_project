@@ -64,6 +64,12 @@ module.exports = {
                 template: "./registration.html"
             },
         ),
+        new HTMLWebpackPlugin(
+            {
+                filename: "page-not-found.html",
+                template: "./page-not-found.html"
+            },
+        ),
 
 
         new CleanWebpackPlugin(),
