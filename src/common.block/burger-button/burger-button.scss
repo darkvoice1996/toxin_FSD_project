@@ -1,25 +1,40 @@
 .burger-button {
-
   width: 34px;
   height: 34px;
 
-
   user-select: none;
 
-  &__input {
-    position: absolute;
-    opacity: 0;
-  }
-
   &__icon {
-
     font-size: 34px;
+
+    &_active {
+      color: transparent;
+      background: $gradient_primary, $dark_s5;
+      background-clip: text, content-box;
+      -webkit-background-clip: text, content-box;
+    }
   }
 
-  input:checked + .burger-button__icon {
-    color: transparent;
-    background: $gradient_primary, $dark_s5;
-    background-clip: text, content-box;
-    -webkit-background-clip: text, content-box;
+  &__content {
+    display: none;
+
+    &_shown {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      position: absolute;
+      left: 0;
+      top: 69px;
+      z-index: 1;
+
+      background-color: $bgc;
+
+      border-top: 1px solid $dark_s25;
+
+      //@include box-shadow_global;
+      box-shadow: 0 45px 25px 10px $dark_s25;
+    }
+
   }
 }

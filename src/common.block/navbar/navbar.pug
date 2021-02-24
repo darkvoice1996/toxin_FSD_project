@@ -1,39 +1,29 @@
-include ../burger-button/burger-button
-nav.navbar
-    a(href="page-not-found.html")
-        .navbar__item
-            .navbar__link.navbar__link_bold.link О нас
-
-    a(href="page-not-found.html")
-        .navbar__item.navbar-dropdown
-            .navbar__link.link Услуги
+nav
+    ul.navbar
+        li.navbar__item
+            a(href="page-not-found.html").link.link_light.link_bold О нас
+        li.navbar__item.navbar__dropdown
+            .navbar__item_expandable
+                .link.link_light Услуги
                 i.material-icons expand_more
+            ul.navbar__dropdown-content
+                a(href="page-not-found.html").link.link_light
+                    li.navbar__dropdown-item Услуга 1
+                a(href="page-not-found.html").link.link_light
+                    li.navbar__dropdown-item Услуга 2
 
-            ul.navbar-dropdown__content
-                    li
-                        a(href="page-not-found.html").navbar__link.link Услуга 1
-                    li
-                        a(href="page-not-found.html").navbar__link.link Услуга 2
-                    li
-                        a(href="page-not-found.html").navbar__link.link Услуга 3
-
-    a(href="page-not-found.html")
-        .navbar__item
-            .navbar__link.link Вакансии
-
-    a(href="page-not-found.html")
-        .navbar__item
-            .navbar__link.link Новости
-
-    a(href="page-not-found.html")
-        .navbar__item.navbar-dropdown
-            .navbar__link.link Соглашения
+        li.navbar__item
+            a(href="page-not-found.html").link.link_light Вакансии
+        li.navbar__item
+            a(href="page-not-found.html").link.link_light Новости
+        li.navbar__item.navbar__dropdown
+            .navbar__item_expandable
+                .link.link_light Соглашения
                 i.material-icons expand_more
+            ul.navbar__dropdown-content
+                a(href="page-not-found.html").link.link_light
+                    li.navbar__dropdown-item Соглашение 1
+                a(href="page-not-found.html").link.link_light
+                    li.navbar__dropdown-item Соглашение 2
 
-            ul.navbar-dropdown__content
-                    li
-                        a(href="page-not-found.html").navbar__link.link Соглашение 1
-                    li
-                        a(href="page-not-found.html").navbar__link.link Соглашение 2
-                    li
-                        a(href="page-not-found.html").navbar__link.link Соглашение 3
+
