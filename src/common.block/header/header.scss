@@ -1,6 +1,7 @@
 .header {
   background-color: $bgc;
   width: 100%;
+  z-index: 10;
 
   &__container {
     height: 70px;

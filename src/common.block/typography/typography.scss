@@ -26,6 +26,11 @@
   &_s50 {
     color: $dark_s50;
   }
+
+  &_bold {
+    font-weight: 700;
+  }
+
 }
 
 .link {
@@ -41,6 +46,10 @@
 
   &_light {
     @include montserrat(14px, $dark_s50, 400);
+  }
+
+  &_bold {
+    font-weight: 700;
   }
 }
 
