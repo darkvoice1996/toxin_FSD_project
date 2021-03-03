@@ -4,7 +4,7 @@ import './styles.scss'
 
 import './common.block/navbar/navbar'
 import './common.block/burger-button/burger-button'
-
+import './common.block/dropdown-counter/dropdown-counter'
 
 
 import './common.block/input/input_masked'

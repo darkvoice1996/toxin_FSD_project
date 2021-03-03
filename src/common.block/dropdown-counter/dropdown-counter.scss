@@ -1,0 +1,55 @@
+.dropdown-counter {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 30px;
+  grid-row-gap: 7px;
+
+  &__item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  &__title {
+
+  }
+
+  &__counter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__button {
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
+
+    color: $dark_s50;
+    font-size: 18px;
+
+    background-color: transparent;
+
+    border: 1px solid $dark_s25;
+    border-radius: 50%;
+
+    &:focus {
+      outline: none;
+    }
+
+    &_blocked {
+      opacity: 0.5;
+    }
+  }
+
+  &__value {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
