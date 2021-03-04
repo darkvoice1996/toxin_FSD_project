@@ -8,6 +8,7 @@ html(lang="en")
         meta(meta http-equiv="X-UA-Compatible" content="ie=edge")
     body
     include import-mixins
+
     .ui-kit
         h2.subtitle Header and footer
         br
@@ -23,15 +24,31 @@ html(lang="en")
         br
         br
         br
-    .ui-kit__forms
+
+    .ui-kit_white.container
         h2.subtitle Form Elements
         br
         label(for="text-field-example").label.input__label text field
         input(type="text" id="text-field-example" name="" placeholder="Email").input
 
         include common.block/dropdown/dropdown__guests
-            
+
         include common.block/dropdown/dropdown__rooms
+
+
+        h2.subtitle Buttons
+        br
+
+        button.btn Click me
+
+        button.btn.btn_white Click me
+
+        button.btn.btn_minimal Click me
+        br
+        br
+        .btn__send-wrapper
+            button.btn.btn_send Перейти к оплате
+                i.material-icons.btn__send-icon arrow_forward
 
 
 

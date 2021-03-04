@@ -30,6 +30,5 @@ for (let i = 0; i < counters.length; i++) {
         }
     })
 
-
 }
 

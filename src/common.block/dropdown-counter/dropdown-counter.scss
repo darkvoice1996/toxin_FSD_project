@@ -6,9 +6,17 @@
   grid-auto-rows: 30px;
   grid-row-gap: 7px;
 
+  padding: 4px 7px 13px 14px;
+
+  border: 1px solid $dark_s50;
+  border-top: none;
+
+  border-radius: 0 0 4px 4px;
+
   &__item {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -52,6 +60,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__controls {
+    margin-top: 14px;
+
+    &_hidden {
+      visibility: hidden;
+    }
   }
 }
 

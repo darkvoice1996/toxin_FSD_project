@@ -8,6 +8,9 @@
 .ui-kit {
   background-color: #E5E5E5;
 }
+.ui-kit_white {
+  background-color: white;
+}
 
 @font-face {
   font-family: "Montserrat";
@@ -317,8 +320,7 @@
   opacity: 0.5;
 }
 .btn_minimal {
-  width: auto;
-  height: auto;
+  min-width: 50px;
   padding: 0;
   border: none;
   background: none;
@@ -334,6 +336,7 @@
 }
 .btn__send-icon {
   position: absolute;
+  top: 0;
   right: 0;
   padding: 10px;
   font-size: 24px;
@@ -674,6 +677,9 @@
 }
 .dropdown__content_narrow {
   max-width: 266px;
+}
+.dropdown__input:focus {
+  border-radius: 4px 4px 0 0;
 }
 
 .checkbox {
@@ -1507,10 +1513,15 @@
   grid-template-columns: 1fr;
   grid-auto-rows: 30px;
   grid-row-gap: 7px;
+  padding: 4px 7px 13px 14px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
 }
 .dropdown-counter__item {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   justify-content: space-between;
 }
 .dropdown-counter__counter {
@@ -1541,6 +1552,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.dropdown-counter__controls {
+  margin-top: 14px;
+}
+.dropdown-counter__controls_hidden {
+  visibility: hidden;
 }
 
 .footer {

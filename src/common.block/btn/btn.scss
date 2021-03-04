@@ -58,8 +58,7 @@
 
   // Minimal Button
   &_minimal {
-    width: auto;
-    height: auto;
+    min-width: 50px;
 
     padding: 0;
 
@@ -82,6 +81,7 @@
 
   &__send-icon {
     position: absolute;
+    top: 0;
     right: 0;
 
     padding: 10px;

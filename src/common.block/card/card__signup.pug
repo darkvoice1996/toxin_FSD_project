@@ -18,7 +18,10 @@ form(action="" method="").card
 
         +toggle-button("get_offers", "Получать спецпредложения", id)
     .card__button
-        +btn_send("Перейти к оплате")
+        .btn__send-wrapper
+            button.btn.btn_send Перейти к оплате
+                i.material-icons.btn__send-icon arrow_forward
+
     .card__footer
         a(href="sign-in.html").link Уже есть аккаунт на Toxin?
         a(href="sign-in.html")
