@@ -29,29 +29,9 @@ html(lang="en")
         label(for="text-field-example").label.input__label text field
         input(type="text" id="text-field-example" name="" placeholder="Email").input
 
-        .dropdown
-            h3.label.input__label Dropdown 1
-            input(type="text" id="512" name="" placeholder="").dropdown__input.input
-            .dropdown__content.dropdown__content_hidden
-                .dropdown-counter
-                    .dropdown-counter__item
-                        h3.dropdown-counter__title.label Спальни
-                        .dropdown-counter__counter
-                            button.dropdown-counter__button.dropdown-counter__minus.dropdown-counter__button_blocked -
-                            .dropdown-counter__value.label 0
-                            button.dropdown-counter__button.dropdown-counter__plus +
-                    .dropdown-counter__item
-                        h3.dropdown-counter__title.label Кровати
-                        .dropdown-counter__counter
-                            button.dropdown-counter__button.dropdown-counter__button_blocked.dropdown-counter__minus -
-                            .dropdown-counter__value.label 0
-                            button.dropdown-counter__button.dropdown-counter__plus +
-                    .dropdown-counter__item
-                        h3.dropdown-counter__title.label Ванные Комнаты
-                        .dropdown-counter__counter
-                            button.dropdown-counter__button.dropdown-counter__button_blocked.dropdown-counter__minus -
-                            .dropdown-counter__value.label 0
-                            button.dropdown-counter__button.dropdown-counter__plus +
+        include common.block/dropdown/dropdown__guests
+            
+        include common.block/dropdown/dropdown__rooms
 
 
 

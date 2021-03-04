@@ -6,11 +6,16 @@ for (let i = 0; i < dropdowns.length; i++) {
 
     toggleContent(input, content)
 
+
     content.addEventListener('click', function (event) {
-        pasteInputValue(input)
+
+        if (dropdowns[i].classList.contains('dropdown__rooms')) showRooms(input)
+        if (dropdowns[i].classList.contains('dropdown__guests')) showGuestsNumber(input)
+
+
     })
 
-    function pasteInputValue(input) {
+    function showRooms(input) {
         let titles = dropdowns[i].querySelectorAll('.dropdown-counter__title')
         let values = dropdowns[i].querySelectorAll('.dropdown-counter__value')
 
@@ -25,6 +30,25 @@ for (let i = 0; i < dropdowns.length; i++) {
 
         input.value = result
     }
+
+    function showGuestsNumber(input) {
+        let values = dropdowns[i].querySelectorAll('.dropdown-counter__value')
+
+        let number = 0
+        let words = ['гость', 'гостя', 'гостей']
+
+        for (let i = 0; i < values.length; i++) {
+            let num = +values[i].innerText
+            number += num
+        }
+
+        input.value = number + ' ' + detectDeclination(number, words)
+
+        function detectDeclination(number, text_forms) {
+            return words[(number % 100 > 4 && number % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(number % 10 < 5) ? number % 10 : 5]];
+        }
+    }
+
     function toggleContent(input, content) {
         input.onfocus = () => content.classList.remove('dropdown__content_hidden')
 

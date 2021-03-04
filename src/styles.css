@@ -672,6 +672,9 @@
 .dropdown__content_hidden {
   display: none;
 }
+.dropdown__content_narrow {
+  max-width: 266px;
+}
 
 .checkbox {
   user-select: none;
