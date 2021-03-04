@@ -1,16 +1,21 @@
 form(action="" method="").card
     +title("Регистрация аккаунта")
     .card__fieldset
-        +input("user_name", "Имя", "text")
-        +input("user_surname", "Фамилия", "text")
+        input(type="text" id="user_name" name="user_name" placeholder="Имя").input
+
+        input(type="text" id="user_surname" name="user_surname" placeholder="Фамилия").input
+
         +radio-button("user_gender")
     .card__fieldset
         +label("Дата Рождения")
         +input_masked("user_birthday", "user_birthday", "Дата рождения")
     .card__fieldset
         +label("Данные для входа в сервис")
-        +input("user_email","Email", "text")
-        +input("user_password", "Пароль", "password")
+
+        input(type="text" id="user_email" name="user_email" placeholder="Email").input
+
+        input(type="password" id="user_password" name="user_password" placeholder="Пароль").input
+
         +toggle-button("get_offers", "Получать спецпредложения", id)
     .card__button
         +btn_send("Перейти к оплате")

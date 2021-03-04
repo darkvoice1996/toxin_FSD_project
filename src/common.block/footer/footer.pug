@@ -1,3 +1,17 @@
-footer.container
-    include ../footer-body/footer-body
+footer.footer
+    .footer__container.container
+
+        .footer__info
+            include ../logo/logo
+            .footer__text
+                +text('Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»')
+
+        nav.footer__nav
+            include ../footer-nav/footer-nav
+
+        .footer__subscribe
+            +label('Подписка')
+            .footer__text
+                +text('Получайте специальные предложения и новости сервиса')
+            +input_subscription('user_email')
     include ../footer-bottom/footer-bottom

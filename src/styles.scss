@@ -1,19 +1,21 @@
 @import "~normalize.css";
 @import "variables";
+
 @import "common.block/ui-kit/ui-kit";
+
 @import "assets/fonts/font-face";
 @import "assets/fonts/font-awesome/css/all.css";
 @import "common.block/typography/typography";
+
 @import "common.block/logo/logo";
-@import "common.block/btn/btn";
 @import "common.block/navbar/navbar";
 @import "common.block/auth-buttons/auth-buttons";
 @import "common.block/auth-user/auth-user";
 @import "common.block/header/header.scss";
 @import "common.block/burger-button/burger-button";
+@import "common.block/btn/btn";
 @import "common.block/footer-bottom/footer-bottom";
 @import "common.block/socials/socials";
-@import "common.block/footer-body/footer-body";
 @import "common.block/footer-nav/footer-nav";
 @import "common.block/input/input";
 @import "common.block/date-dropdown/date-dropdown";
@@ -43,6 +45,7 @@
 @import "common.block/rooms-panel/rooms-panel";
 @import "common.block/page-not-found/page-not-found";
 @import "common.block/dropdown-counter/dropdown-counter";
+@import "common.block/footer/footer";
 
 
 * {
