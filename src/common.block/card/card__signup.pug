@@ -7,8 +7,8 @@ form(action="" method="").card
 
         +radio-button("user_gender")
     .card__fieldset
-        +label("Дата Рождения")
-        +input_masked("user_birthday", "user_birthday", "Дата рождения")
+        label(for="user_birthday").label.input__label Дата Рождения
+        input.input.input_masked(type="text" id="user_birthday" name="user_birthday" placeholder="ДД.ММ.ГГГГ")
     .card__fieldset
         +label("Данные для входа в сервис")
 

@@ -1,4 +1,8 @@
-maskBirthDay(document.querySelector('.input_masked'))
+let maskedInputs = document.querySelectorAll('.input_masked')
+
+for (let i = 0; i < maskedInputs.length; i++) {
+    maskBirthDay(maskedInputs[i])
+}
 
 function maskBirthDay(input) {
     let mask = /[0-3][0-9]\.[0-1][0-9]\.[1-2][09][0-9][0-9]/
@@ -23,5 +27,4 @@ function maskBirthDay(input) {
     function setDots(value) {
         return value.slice(0, 2) + '.' + value.slice(2, 4) + '.' + value.slice(4)
     }
-
 }

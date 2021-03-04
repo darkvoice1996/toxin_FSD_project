@@ -1,8 +1,8 @@
 label(for="text-field-example").label.input__label text field
 input(type="text" id="text-field-example" name="" placeholder="Email").input
 
-mixin input_masked(name)
-    input.input.input_masked(type="text" id="user_birthday" name=name placeholder="ДД.ММ.ГГГГ")
+label(for="user_birthday").label.input__label Masked input
+input.input.input_masked(type="text" id="user_birthday" name="user_birthday" placeholder="ДД.ММ.ГГГГ")
 
 mixin input_subscription(id)
     .input-subscription__wrapper
