@@ -6,4 +6,6 @@ form(action="search-room.html" method="").card
         +label("Гости")
         //include ../dropdown/dropdown__guests
     .card__fieldset
-        +btn_send('Подобрать номер')
+        .btn__send-wrapper
+            button.btn.btn_send Подобрать номер
+                i.material-icons.btn__send-icon arrow_forward
