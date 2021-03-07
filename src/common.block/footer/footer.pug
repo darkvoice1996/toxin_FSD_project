@@ -4,16 +4,16 @@ footer.footer
         .footer__info
             include ../logo/logo
             .footer__text
-                +text('Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»')
+                p.text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
 
         nav.footer__nav
             include ../footer-nav/footer-nav
 
         .footer__subscribe
-            label(for="user_email").label.input__label Подписка
+            label(for="email").label.input__label Подписка
             .footer__text
-                +text('Получайте специальные предложения и новости сервиса')
-            .input-subscription__wrapper
-                input.input.input-subscription__input.input_narrow(type="email" id="user_email" name="user_email" placeholder="Email")
-                i.material-icons.input-subscription__icon arrow_forward
-    include ../footer-bottom/footer-bottom
+                p.text Получайте специальные предложения и новости сервиса
+            .input__wrapper_narrow
+                input.input.input_narrow(type="email" id="email" placeholder="Email")
+                i.material-icons.input__icon.input__icon_purple arrow_forward
+include ../footer-bottom/footer-bottom
