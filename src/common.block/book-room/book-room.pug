@@ -3,7 +3,20 @@ form(action="" method="").card
         +room-info_bookup-title('888', '9990', 'люкс')
 
     .card__fieldset
-        +date-dropdown("check-in", "Прибытие", "check-out", "Выезд")
+        //+date-dropdown("check-in", "Прибытие", "check-out", "Выезд")
+        .date-dropdown__container
+            .date-dropdown__item
+                label(for="check-in").label.input__label  Прибытие
+                input(type="text"
+                    name="check-in"
+                    id="check-in"
+                    placeholder="ДД.ММ.ГГГГ"
+                    spellcheck="false").datepicker-here.date-period-picker__item.input.input__dropdown.date-dropdown__input
+            .date-dropdown__item
+                label(for="check-out").label.input__label Выезд
+                input(type="text" name="check-out" id="check-out"
+                    placeholder="ДД.ММ.ГГГГ"
+                    spellcheck="false").datepicker-here.date-period-picker__item.input.input__dropdown.date-dropdown__input
     .card__fieldset
         +label("Гости")
         //include ../dropdown/dropdown__guests

@@ -7,7 +7,7 @@ import './common.block/burger-button/burger-button'
 import './common.block/dropdown-counter/dropdown-counter'
 
 
-import './common.block/input/input_masked'
+import './common.block/input/input__masked'
 import './common.block/datepicker/datepicker'
 // import 'paginationjs/src/pagination'
 // import './common.block/pagination/pagination'

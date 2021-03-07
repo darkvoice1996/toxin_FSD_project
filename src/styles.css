@@ -490,16 +490,23 @@
 .input_narrow {
   max-width: 266px;
 }
-
-.input-subscription__wrapper {
-  width: 267px;
+.input__wrapper {
+  max-width: 320px;
   position: relative;
 }
-.input-subscription__icon {
+.input__wrapper_narrow {
+  max-width: 267px;
+  position: relative;
+}
+.input__icon {
   position: absolute;
   right: 0;
   padding: 10px;
   font-size: 24px;
+  color: rgba(31, 32, 65, 0.5);
+  user-select: none;
+}
+.input__icon_purple {
   color: transparent;
   background: linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
   -webkit-background-clip: text;

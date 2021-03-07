@@ -31,15 +31,19 @@
       color: $dark_s75;
     }
   }
+
   &_narrow {
     max-width: 266px;
   }
-}
 
-.input-subscription {
   &__wrapper {
-    width: 267px;
+    max-width: 320px;
     position: relative;
+
+    &_narrow {
+      max-width: 267px;
+      position: relative;
+    }
 
   }
 
@@ -50,12 +54,17 @@
     padding: 10px;
 
     font-size: 24px;
-    color: transparent;
 
-    background: $gradient_primary;
-    -webkit-background-clip: text;
+    color: $dark_s50;
+
+    user-select: none;
+
+    &_purple {
+      color: transparent;
+      background: $gradient_primary;
+      -webkit-background-clip: text;
+    }
+
   }
-
-
 }
 

@@ -10,8 +10,10 @@ footer.footer
             include ../footer-nav/footer-nav
 
         .footer__subscribe
-            +label('Подписка')
+            label(for="user_email").label.input__label Подписка
             .footer__text
                 +text('Получайте специальные предложения и новости сервиса')
-            +input_subscription('user_email')
+            .input-subscription__wrapper
+                input.input.input-subscription__input.input_narrow(type="email" id="user_email" name="user_email" placeholder="Email")
+                i.material-icons.input-subscription__icon arrow_forward
     include ../footer-bottom/footer-bottom

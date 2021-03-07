@@ -28,30 +28,32 @@ html(lang="en")
     .ui-kit_white.container
         h2.subtitle Form Elements
         br
-        label(for="text-field-example").label.input__label text field
-        input(type="text" id="text-field-example" name="" placeholder="Email").input
-        br
-        label(for="user_birthday").label.input__label Masked input
-        input.input.input_masked(type="text" id="user_birthday" name="user_birthday" placeholder="ДД.ММ.ГГГГ")
+
+        include common.block/input/input
+
+        include common.block/input/input__masked
 
         include common.block/dropdown/dropdown__guests
 
         include common.block/dropdown/dropdown__rooms
 
+        include common.block/input/input__subscription
+
+        include common.block/date-dropdown/date-dropdown
+
+        include common.block/date-dropdown/date-dropdown__filter
 
         h2.subtitle Buttons
         br
 
-        button.btn Click me
+        include common.block/btn/btn
 
-        button.btn.btn_white Click me
+        include common.block/btn/btn_white
 
-        button.btn.btn_minimal Click me
+        include common.block/btn/btn_minimal
         br
         br
-        .btn__send-wrapper
-            button.btn.btn_send Перейти к оплате
-                i.material-icons.btn__send-icon arrow_forward
+        include common.block/btn/btn_send
 
 
 

@@ -20,7 +20,11 @@ function showRooms(input, dropdown) {
         }
     }
 
-    input.value = result
+    input.value = result.slice(0, 28)
+
+    if (input.value.length === 28) {
+        input.value += '...'
+    }
 }
 
 function showGuestsNumber(input, dropdown) {

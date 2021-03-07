@@ -1,4 +1,4 @@
-let maskedInputs = document.querySelectorAll('.input_masked')
+let maskedInputs = document.querySelectorAll('.input__masked')
 
 for (let i = 0; i < maskedInputs.length; i++) {
     maskBirthDay(maskedInputs[i])
@@ -9,8 +9,6 @@ function maskBirthDay(input) {
 
     input.addEventListener('input', function (event) {
         checkOnRegExp(/[0-9]/)
-        // console.log(input.value.length)
-        // input.blur()
 
         if (input.value.length === 8) {
             input.value = setDots(input.value)

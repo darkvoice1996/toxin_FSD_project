@@ -1,6 +1,9 @@
 .dropdown.dropdown__rooms
-    h3.label.input__label Dropdown Rooms
-    input(type="text" id="512" name="" placeholder="Сколько комнат").dropdown__input.input.input_narrow
+    label(for="512").label.input__label Dropdown Rooms
+    .input__wrapper_narrow
+        input(type="text" id="512" name="" placeholder="Сколько комнат").dropdown__input.input.input_narrow
+        i.material-icons.input__icon expand_more
+
     .dropdown__content.dropdown__content_hidden.dropdown__content_narrow
         .dropdown-counter
             .dropdown-counter__item

@@ -1,6 +1,9 @@
 .dropdown.dropdown__guests
-    h3.label.input__label Dropdown Guests
-    input(type="text" id="512" name="" placeholder="Сколько гостей").dropdown__input.input
+    label(for="51222").label.input__label Dropdown Guests
+    .input__wrapper
+          input(type="text" id="51222" name="" placeholder="Сколько гостей").dropdown__input.input
+          i.material-icons.input__icon expand_more
+
     .dropdown__content.dropdown__content_hidden
         .dropdown-counter
                 .dropdown-counter__item
@@ -24,4 +27,3 @@
                 .dropdown-counter__item.dropdown-counter__controls
                     button.btn.btn_minimal.dropdown-counter__clear-button.dropdown-counter__controls_hidden Очистить
                     button.btn.btn_minimal.dropdown-counter__submit-button Применить
-                    //
