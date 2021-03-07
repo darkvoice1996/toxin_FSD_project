@@ -29,7 +29,7 @@
 
 
 @media (max-width: 1020px) {
-  .footer-body {
+  .footer {
     &__container {
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
@@ -52,7 +52,7 @@
   }
 }
 @media (max-width: 820px) {
-  .footer-body {
+  .footer {
     padding: {
       top: 54px;
       bottom: 40px;
