@@ -679,6 +679,12 @@
   border-top: none;
 }
 
+.dropdown__content {
+  position: absolute;
+  width: 320px;
+  background-color: #fff;
+  z-index: 1;
+}
 .dropdown__content_hidden {
   display: none;
 }
@@ -833,12 +839,6 @@
   cursor: pointer;
   user-select: none;
 }
-.like-button_active {
-  border-color: transparent;
-  background: radial-gradient(circle, #fff, #fff), linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-}
 .like-button__icon {
   display: flex;
   align-items: center;
@@ -847,11 +847,6 @@
   height: 18px;
   font-size: 10px;
   color: rgba(31, 32, 65, 0.25);
-}
-.like-button__icon_active {
-  color: transparent;
-  background: linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
-  -webkit-background-clip: text;
 }
 .like-button__counter {
   width: 18px;
@@ -863,7 +858,20 @@
   color: rgba(31, 32, 65, 0.25);
   font-size: 10px;
 }
-.like-button__counter_active {
+
+.like-button_active {
+  border-color: transparent;
+  background: radial-gradient(circle, #fff, #fff), linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.like-button_active .like-button__icon {
+  color: transparent;
+  background: linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  transition: 0.4s;
+}
+.like-button_active .like-button__counter {
   color: #bc9cff;
 }
 
@@ -932,15 +940,28 @@
   width: 40px;
 }
 
-.paginationjs .paginationjs-pages li:last-child {
+.paginationjs .paginationjs-pages li:last-child,
+.paginationjs-prev {
   background: url("./common.block/pagination/arrow_forward.svg") center center no-repeat, linear-gradient(180deg, #6fcf97 0%, #66D2EA 100%);
   background-size: 18px;
 }
-.paginationjs .paginationjs-pages li:last-child a {
+.paginationjs .paginationjs-pages li:last-child a,
+.paginationjs-prev a {
+  color: transparent;
+  visibility: hidden;
+  cursor: pointer;
+}
+.paginationjs .paginationjs-pages li:last-child a:hover,
+.paginationjs-prev a:hover {
   color: transparent;
 }
-.paginationjs .paginationjs-pages li:last-child a:hover {
-  color: transparent;
+
+.paginationjs-prev {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .paginationjs .paginationjs-pages li > a:hover {
@@ -975,13 +996,13 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 266px;
+  max-width: 266px;
   box-sizing: border-box;
 }
 .bullet-list__item {
   position: relative;
   padding-left: 20px;
-  margin-top: 7px;
+  margin-bottom: 10px;
   line-height: 24px;
 }
 .bullet-list__item:nth-child(2) {
@@ -1032,11 +1053,13 @@
   font-weight: bold;
 }
 
-.expandable-block {
+.expandable-block__header {
   width: 266px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+  user-select: none;
 }
 .expandable-block__icon {
   width: 46px;
@@ -1051,11 +1074,10 @@
   transition: 0.4s;
 }
 .expandable-block__content {
-  display: none;
-}
-.expandable-block__content_open {
   display: block;
-  transition: 0.4s;
+}
+.expandable-block__content_hidden {
+  display: none;
 }
 
 .card {

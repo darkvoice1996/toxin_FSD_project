@@ -2,14 +2,14 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 266px;
+  max-width: 266px;
   box-sizing: border-box;
 
   &__item {
     position: relative;
     padding-left: 20px;
 
-    margin-top: 7px;
+    margin-bottom: 10px;
 
     line-height: 24px;
 

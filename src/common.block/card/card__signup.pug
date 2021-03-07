@@ -5,7 +5,13 @@ form(action="" method="").card
 
         input(type="text" id="user_surname" name="user_surname" placeholder="Фамилия").input
 
-        +radio-button("user_gender")
+        .radio-button
+            .radio-button__item
+                input(type="radio" id="man" name="gender" value="man").radio-button__input
+                label(for="man").text Мужчина
+            .radio-button__item
+                input(type="radio" id="woman" name="gender" value="woman").radio-button__input
+                label(for="woman").text Женщина
     .card__fieldset
         label(for="user_birthday").label.input__label Дата Рождения
         input.input.input_masked(type="text" id="user_birthday" name="user_birthday" placeholder="ДД.ММ.ГГГГ")
@@ -16,7 +22,11 @@ form(action="" method="").card
 
         input(type="password" id="user_password" name="user_password" placeholder="Пароль").input
 
-        +toggle-button("get_offers", "Получать спецпредложения", id)
+        .toggle-button
+            label(for="send-promo").text
+                input(type="checkbox" id="send-promo" name="send-promo")
+                .toggle-button__slider
+                .text.toggle-button__text Получать спецпредложения
     .card__button
         .btn__send-wrapper
             button.btn.btn_send Перейти к оплате

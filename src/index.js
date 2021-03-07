@@ -4,21 +4,20 @@ import './styles.scss'
 
 import './common.block/navbar/navbar'
 import './common.block/burger-button/burger-button'
-import './common.block/dropdown-counter/dropdown-counter'
-
-
-import './common.block/input/input__masked'
-import './common.block/datepicker/datepicker'
-// import 'paginationjs/src/pagination'
-// import './common.block/pagination/pagination'
-
-
-import './common.block/rate-button/rate-button'
-
 import './common.block/dropdown/dropdown'
-import './common.block/expandable-block/expandable-block'
+import './common.block/dropdown-counter/dropdown-counter'
+import './common.block/input/input__masked'
 import './common.block/like-button/like-button'
-
+import './common.block/rate-button/rate-button'
+import './common.block/datepicker/datepicker'
+import 'paginationjs/src/pagination'
+import './common.block/pagination/pagination'
+import './common.block/like-button/like-button'
+import './common.block/expandable-block/expandable-block'
 import './common.block/slick-carousel/slick-carousel'
+
+
+
+
 
 

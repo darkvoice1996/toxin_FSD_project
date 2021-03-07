@@ -1,6 +1,5 @@
-mixin toggle-button(name, text)
-    .toggle-button
-        label(for=id).text
-            input(type="checkbox" name=name)
-            .toggle-button__slider
-            .text.toggle-button__text= text
+.toggle-button
+    label(for="send-promo").text
+        input(type="checkbox" id="send-promo" name="send-promo")
+        .toggle-button__slider
+        .text.toggle-button__text Получать спецпредложения

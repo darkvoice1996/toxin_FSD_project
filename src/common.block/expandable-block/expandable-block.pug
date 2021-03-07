@@ -1,7 +1,30 @@
-mixin expandable-block(title)
-    .expandable-block(onclick="expandBlock()")
-        +label(title)
+.expandable-block
+    .expandable-block__header
+        h3.label Expandable checkbox list
         .expandable-block__icon
             i.material-icons expand_more
-    form(action="" method="").checkbox.expandable-block__content
-        block
+    .checkbox.expandable-block__content.expandable-block__content_hidden
+        label(for="breakfast").checkbox__item
+            input(type="checkbox" id="breakfast" name="breakfast")
+            .checkbox__custom-input
+            .checkbox__text Завтрак
+        label(for="table").checkbox__item
+            input(type="checkbox" id="table" name="table")
+            .checkbox__custom-input
+            .checkbox__text Письменный стол
+        label(for="child-chair").checkbox__item
+            input(type="checkbox" id="child-chair" name="child-chair")
+            .checkbox__custom-input
+            .checkbox__text Стул для кормления
+        label(for="child-bed").checkbox__item
+            input(type="checkbox" id="child-bed" name="child-bed")
+            .checkbox__custom-input
+            .checkbox__text Кроватка
+        label(for="TV").checkbox__item
+            input(type="checkbox" id="TV" name="TV")
+            .checkbox__custom-input
+            .checkbox__text Телевизор
+        label(for="Shampoo").checkbox__item
+            input(type="checkbox" id="Shampoo" name="Shampoo")
+            .checkbox__custom-input
+            .checkbox__text Шампунь

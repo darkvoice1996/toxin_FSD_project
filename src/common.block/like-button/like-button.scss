@@ -14,13 +14,6 @@
   cursor: pointer;
   user-select: none;
 
-  &_active {
-    border-color: transparent;
-    background: radial-gradient(circle, #fff, #fff), $gradient_primary;
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-  }
-
   &__icon {
 
     display: flex;
@@ -32,12 +25,6 @@
 
     font-size: 10px;
     color: $dark_s25;
-
-    &_active {
-      color: transparent;
-      background: $gradient_primary;
-      -webkit-background-clip: text;
-    }
   }
 
   &__counter {
@@ -48,11 +35,25 @@
 
     @include montserrat(10px, $dark_s25, 400);
     font-size: 10px;
+  }
+}
 
-    &_active {
-      color: $purple;
-    }
+.like-button_active {
+
+    border-color: transparent;
+    background: radial-gradient(circle, #fff, #fff), $gradient_primary;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+  .like-button__icon {
+      color: transparent;
+      background: $gradient_primary;
+      -webkit-background-clip: text;
+      transition: .4s;
   }
 
+  .like-button__counter {
+      color: $purple;
+  }
 
 }

@@ -1,6 +1,12 @@
 .dropdown {
   &__content {
 
+    position: absolute;
+    width: 320px;
+    background-color: $bgc;
+
+    z-index: 1;
+
     &_hidden {
       display: none;
     }

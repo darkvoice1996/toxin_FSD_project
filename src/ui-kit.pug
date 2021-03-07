@@ -55,8 +55,37 @@ html(lang="en")
         br
         include common.block/btn/btn_send
 
+        include common.block/checkbox/checkbox
 
+        include common.block/checkbox/checkbox__rich
 
+        include common.block/bullet-list/bullet-list
+
+        h3.label.input__label Radio buttons
+        include common.block/radio-button/radio-button
+
+        h3.label.input__label Toggle
+        include common.block/toggle-button/toggle-button
+
+        h3.label.input__label Like Button
+        include common.block/like-button/like-button
+
+        h3.label.input__label Like Button
+        include common.block/rate-button/rate-button
+
+        h3.label.input__label Pagination
+        include common.block/pagination/pagination
+
+        #pagination-data-container There will be page content
+        .pagination
+            #pagination-bar
+            .pagination__footer.text 1 - 12 из 100+ вариантов аренды
+
+        include common.block/expandable-block/expandable-block
+
+        include common.block/room-feature/room-feature
+
+        include common.block/comment/comment
 
     //include common.block/dropdown-counter/dropdown-counter
 
@@ -97,6 +126,7 @@ html(lang="en")
         //        p.ui-comment +subtitle('')
         //        +subtitle("Next one is the item title inside widgets.")
         //        hr
+        //        p.ui-comment +label('')
         //        p.ui-comment +label('')
         //        +label("This is a label or CTA text.")
         //        hr

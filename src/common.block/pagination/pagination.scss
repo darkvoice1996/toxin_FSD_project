@@ -1,4 +1,5 @@
 @import "~paginationjs/dist/pagination.css";
+
 .pagination {
   height: 72px;
 
@@ -74,9 +75,13 @@
   width: 40px;
 }
 
-.paginationjs .paginationjs-pages li:last-child {
+.paginationjs .paginationjs-pages li:last-child,
+.paginationjs-prev {
   a {
     color: transparent;
+    visibility: hidden;
+    cursor: pointer;
+
     &:hover {
       color: transparent;
     }
@@ -84,6 +89,14 @@
 
   background: url("./common.block/pagination/arrow_forward.svg") center center no-repeat, $gradient_secondary;
   background-size: 18px;
+}
+
+.paginationjs-prev {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .paginationjs .paginationjs-pages li > a:hover {
@@ -97,3 +110,4 @@
   opacity: 0.7;
   font-weight: 700;
 }
+

@@ -1,8 +1,13 @@
 .expandable-block {
-  width: 266px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  &__header {
+    width: 266px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+    user-select: none;
+  }
 
   &__icon {
     width: 46px;
@@ -19,11 +24,10 @@
   }
 
   &__content {
-    display: none;
+    display: block;
 
-    &_open {
-      display: block;
-      @include transition_global;
+    &_hidden {
+      display: none;
     }
   }
 
