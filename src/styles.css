@@ -14,6 +14,44 @@
 .ui-kit__room-card {
   max-width: 270px;
 }
+.ui-kit__color-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 70px;
+  border-radius: 5px;
+}
+.ui-kit .dark_s100 {
+  background-color: #1F2041;
+}
+.ui-kit .dark_s75 {
+  background-color: rgba(31, 32, 65, 0.75);
+}
+.ui-kit .dark_s50 {
+  background-color: rgba(31, 32, 65, 0.5);
+}
+.ui-kit .dark_s25 {
+  background-color: rgba(31, 32, 65, 0.25);
+}
+.ui-kit .dark_s5 {
+  background-color: rgba(31, 32, 65, 0.05);
+}
+.ui-kit .dark_s10 {
+  background-color: rgba(31, 32, 65, 0.1);
+}
+.ui-kit .purple {
+  background-color: #bc9cff;
+}
+.ui-kit .green {
+  background-color: #6fcf97;
+}
+.ui-kit .gradient_purple {
+  background: linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
+}
+.ui-kit .gradient_green {
+  background: linear-gradient(180deg, #6fcf97 0%, #66D2EA 100%);
+}
 
 @font-face {
   font-family: "Montserrat";

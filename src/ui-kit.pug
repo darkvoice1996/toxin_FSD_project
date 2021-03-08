@@ -25,11 +25,32 @@ html(lang="en")
             br
             br
 
-        //.ui-kit_white.container
-        //    h2.subtitle Colors & Type
+        .ui-kit.ui-kit_white.container
 
+            h2.subtitle Type
+            br
+            h1.title This one is the sub-section or widget title
+            br
+            h2.subtitle Next one is the item title inside widgets
+            br
+            h3.label This is a label or CTA text
+            br
+            br
+            p.text This is the body text which is used for most of the design, like paragraphs, lists, etc.
+            br
 
+            h2.subtitle Colors
 
+            .ui-kit__color-item.dark_s100 $dark_s100
+            .ui-kit__color-item.dark_s75 $dark_s75
+            .ui-kit__color-item.dark_s50 $dark_s50
+            .ui-kit__color-item.dark_s25 $dark_s25
+            .ui-kit__color-item.dark_s10 $dark_s10
+            .ui-kit__color-item.dark_s5 $dark_s5
+            .ui-kit__color-item.purple $purple
+            .ui-kit__color-item.green $green
+            .ui-kit__color-item.gradient_purple $gradient_primary
+            .ui-kit__color-item.gradient_green $gradient_secondary
 
         .ui-kit_white.container
             h2.subtitle Form Elements
@@ -100,7 +121,137 @@ html(lang="en")
             .ui-kit__room-card
                 include common.block/room-card/room-card
 
+//include common.block/dropdown-counter/dropdown-counter
 
+
+    //br
+    //br
+    //br
+    //br
+    //br
+    //br
+    //include common.block/comment/comment
+    //// CARDS
+    //.ui-kit__cards
+    //    include common.block/card/card__signup
+    //    include common.block/card/card__login
+    //    include common.block/card/card__filter
+    //    include common.block/book-room/book-room
+    //    include common.block/room-card/room-card
+    //
+    //.ui-kit__container
+    //    .ui-kit__box
+    //        +title('COLORS')
+    //        .ui-kit__color-item.dark_s100 $dark_s100
+    //        .ui-kit__color-item.dark_s75 $dark_s75
+    //        .ui-kit__color-item.dark_s50 $dark_s50
+    //        .ui-kit__color-item.dark_s25 $dark_s25
+    //        .ui-kit__color-item.dark_s10 $dark_s10
+    //        .ui-kit__color-item.dark_s5 $dark_s5
+    //        .ui-kit__color-item.purple $purple
+    //        .ui-kit__color-item.green $green
+    //        .ui-kit__color-item.gradient_purple $gradient_primary
+    //        .ui-kit__color-item.gradient_green $gradient_secondary
+    //    .ui-kit__box
+    //        +title('TYPOGRAPHY')
+    //        p.ui-comment +title('')
+    //        +title(`This one is the sub-section or widget title.`)
+    //        hr
+    //        p.ui-comment +subtitle('')
+    //        +subtitle("Next one is the item title inside widgets.")
+    //        hr
+    //        p.ui-comment +label('')
+    //        p.ui-comment +label('')
+    //        +label("This is a label or CTA text.")
+    //        hr
+    //        p.ui-comment +text('')
+    //        +text("This is the body text which is used for most of the design, like paragraphs, lists, etc.")
+    //
+    //    .ui-kit__box
+    //        +title('BUTTONS')
+    //        p.ui-comment +btn('button')
+    //        +btn('button')
+    //        p.ui-comment +btn_white('button')
+    //        +btn_white('button')
+    //        p.ui-comment +btn_minimal('button')
+    //        +btn_minimal('button')
+    //        p.ui-comment +btn_send('Отправить')
+    //        +btn_send('Отправить')
+    //        p.ui-comment +rate-button
+    //        +rate-button
+    //
+    //    // INPUTS
+    //    .ui-kit__box
+    //        +title('Inputs')
+    //        p.ui-comment +input('example', 'text field', 'Email')
+    //        +input('example', 'text field', 'Email')
+    //
+    //        p.ui-comment +input_subscription('example', 'subscription text field')
+    //        +input_subscription('example', 'subscription text field')
+    //
+    //        p.ui-comment +input_masked(8445, 'masked text field')
+    //        +input_masked(8445, 'masked text field')
+    //
+    //        p.ui-comment +date-dropdown('id_frfdf', 'date dropdown', 'id_2ffd', 'date dropdown')
+    //        +date-dropdown('id_frfdf', 'date dropdown', 'id_2ffd', 'date dropdown')
+    //
+    //        p.ui-comment +date-dropdown_period('id_df4e', 'filter dropdown')
+    //        +date-dropdown_period('id_df4e', 'filter dropdown')
+    //
+    //    // DROPDOWNS
+    //    .ui-kit__box
+    //        +title('Dropdowns')
+    //        p.ui-comment dropdown__guests
+    //        include common.block/dropdown/dropdown__guests
+    //
+    //        p.ui-comment dropdown__rooms
+    //        include common.block/dropdown/dropdown__rooms
+    //
+    //        ul.bullet-list
+    //            +label('bullet list')
+    //            li.bullet-list__item Нельзя с питомцами
+    //            li.bullet-list__item Без вечеринок и мероприятий
+    //            li.bullet-list__item Время прибытия — после 13:00, a выезд до 12:00
+    //
+    //
+    //        include common.block/room-feature/room-feature
+    //            +expandable-block('expandable checkbox list')
+    //                +checkbox__item('exp1','exp2','Завтрак')
+    //                +checkbox__item('exp3','exp3','Письменный стол')
+    //                +checkbox__item('exp4','exp4','Стул для кормления')
+    //                +checkbox__item('exp5','exp5','Кроватка')
+    //                +checkbox__item('exp6','exp6','Телевизор')
+    //                +checkbox__item('exp7','exp7','Шампунь')
+    //
+    //    // Form  buttons
+    //    .ui-kit__box
+    //        +title("Form buttons")
+    //        //p.ui-comment +checkbox("Checkbox")
+    //        //+checkbox("Checkbox")
+    //
+    //        +checkbox('checkbox')
+    //            +checkbox__item('ch1', 'ch1', 'Можно курить')
+    //            +checkbox__item('ch2', 'ch2', 'Можно с питомцами')
+    //            +checkbox__item('ch3', 'ch3', 'Можно пригласить гостей (до 10 человек)')
+    //
+    //        +checkbox('rich checkbox')
+    //            +checkbox-rich__item('ch1r', 'ch1r', 'Широкий коридор', 'Ширина коридоров в номере не менее 91 см.')
+    //            +checkbox-rich__item('ch2r', 'ch2r', 'Помощник для инвалидов', 'На 1 этаже вас встретит специалист  и проводит до номера.')
+    //
+    //        +radio-button("ui_radio")
+    //
+    //        p.ui-comment toggle-button("toggle_dfdf", "Получать спецпредложения")
+    //        +toggle-button("toggle_dfdf", "Получать спецпредложения")
+    //
+    //        +like-button
+    //
+    //
+    //    // PAGINATION
+    //    .ui-kit__box
+    //        #pagination-data-container There will be page content
+    //        .pagination
+    //            #pagination-bar
+    //            .pagination__footer.text 1 - 12 из 100+ вариантов аренды
 
 
 
