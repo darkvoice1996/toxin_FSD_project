@@ -1,5 +1,5 @@
-form(action="search-room.html" method="").card
-    +title("Найдём номера под ваши пожелания")
+.card
+    h1.title Найдём номера под ваши пожелания
     .card__fieldset
         .date-dropdown__container
             .date-dropdown__item
@@ -14,11 +14,14 @@ form(action="search-room.html" method="").card
                 input(type="text" name="check-out" id="check-out"
                     placeholder="ДД.ММ.ГГГГ"
                     spellcheck="false").datepicker-here.date-period-picker__item.input.input__dropdown.date-dropdown__input
+
     .card__fieldset
-        +label("Гости")
         .dropdown.dropdown__guests
-            h3.label.input__label Dropdown Guests
-            input(type="text" id="512" name="" placeholder="Сколько гостей").dropdown__input.input
+            label(for="guests").label.input__label Гости
+            .input__wrapper
+                input(type="text" id="guests" name="guests" placeholder="Сколько гостей").dropdown__input.input
+                i.material-icons.input__icon expand_more
+
             .dropdown__content.dropdown__content_hidden
                 .dropdown-counter
                     .dropdown-counter__item
@@ -42,7 +45,7 @@ form(action="search-room.html" method="").card
                     .dropdown-counter__item.dropdown-counter__controls
                         button.btn.btn_minimal.dropdown-counter__clear-button.dropdown-counter__controls_hidden Очистить
                         button.btn.btn_minimal.dropdown-counter__submit-button Применить
-    .card__fieldset
+    .card__fieldset.card__button
         .btn__send-wrapper
             button.btn.btn_send Подобрать номер
                 i.material-icons.btn__send-icon arrow_forward

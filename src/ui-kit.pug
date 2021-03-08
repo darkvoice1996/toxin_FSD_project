@@ -7,85 +7,86 @@ html(lang="en")
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
         meta(meta http-equiv="X-UA-Compatible" content="ie=edge")
     body
-    include import-mixins
+        include import-mixins
 
-    .ui-kit
-        h2.subtitle Header and footer
-        br
-        +header(true)
-        br
-        br
-        br
-        +header(false)
-        br
-        br
-        br
-        include common.block/footer/footer
-        br
-        br
-        br
+        .ui-kit
+            h2.subtitle Header and footer
+            br
+            +header(true)
+            br
+            br
+            br
+            +header(false)
+            br
+            br
+            br
+            include common.block/footer/footer
+            br
+            br
+            br
 
-    .ui-kit_white.container
-        h2.subtitle Form Elements
-        br
+        .ui-kit_white.container
+            h2.subtitle Form Elements
+            br
 
-        include common.block/input/input
+            include common.block/input/input
 
-        include common.block/input/input__masked
+            include common.block/input/input__masked
 
-        include common.block/dropdown/dropdown__guests
+            include common.block/dropdown/dropdown__guests
 
-        include common.block/dropdown/dropdown__rooms
+            include common.block/dropdown/dropdown__rooms
 
-        include common.block/input/input__subscription
+            include common.block/input/input__subscription
 
-        include common.block/date-dropdown/date-dropdown
+            include common.block/date-dropdown/date-dropdown
 
-        include common.block/date-dropdown/date-dropdown__filter
+            include common.block/date-dropdown/date-dropdown__filter
 
-        h2.subtitle Buttons
-        br
+            h2.subtitle Buttons
+            br
 
-        include common.block/btn/btn
+            include common.block/btn/btn
 
-        include common.block/btn/btn_white
+            include common.block/btn/btn_white
 
-        include common.block/btn/btn_minimal
-        br
-        br
-        include common.block/btn/btn_send
+            include common.block/btn/btn_minimal
+            br
+            br
+            include common.block/btn/btn_send
 
-        include common.block/checkbox/checkbox
+            include common.block/checkbox/checkbox
 
-        include common.block/checkbox/checkbox__rich
+            include common.block/checkbox/checkbox__rich
 
-        include common.block/bullet-list/bullet-list
+            include common.block/bullet-list/bullet-list
 
-        h3.label.input__label Radio buttons
-        include common.block/radio-button/radio-button
+            h3.label.input__label Radio buttons
+            include common.block/radio-button/radio-button
 
-        h3.label.input__label Toggle
-        include common.block/toggle-button/toggle-button
+            h3.label.input__label Toggle
+            include common.block/toggle-button/toggle-button
 
-        h3.label.input__label Like Button
-        include common.block/like-button/like-button
+            h3.label.input__label Like Button
+            include common.block/like-button/like-button
 
-        h3.label.input__label Like Button
-        include common.block/rate-button/rate-button
+            h3.label.input__label Like Button
+            include common.block/rate-button/rate-button
 
-        h3.label.input__label Pagination
-        include common.block/pagination/pagination
+            h3.label.input__label Pagination
+            include common.block/pagination/pagination
 
-        #pagination-data-container There will be page content
-        .pagination
-            #pagination-bar
-            .pagination__footer.text 1 - 12 из 100+ вариантов аренды
+            include common.block/expandable-block/expandable-block
 
-        include common.block/expandable-block/expandable-block
+            include common.block/room-feature/room-feature
 
-        include common.block/room-feature/room-feature
+            include common.block/comment/comment
 
-        include common.block/comment/comment
+        .ui-kit
+            h2.subtitle Cards
+
+            include common.block/card/card__filter
+
 
 
 
