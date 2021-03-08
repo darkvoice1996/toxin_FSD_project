@@ -1,32 +1,35 @@
-form(action="" method="").card
-    +title("Регистрация аккаунта")
+.card
+    h2.title.card__title Регистрация аккаунта
+
     .card__fieldset
         input(type="text" id="user_name" name="user_name" placeholder="Имя").input
-
         input(type="text" id="user_surname" name="user_surname" placeholder="Фамилия").input
+        .card__radio
+            .radio-button
+                .radio-button__item
+                    input(type="radio" id="male" name="user_gender" value="man").radio-button__input
+                    label(for="male").text Мужчина
+                .radio-button__item
+                    input(type="radio" id="female" name="user_gender" value="woman").radio-button__input
+                    label(for="female").text Женщина
 
-        .radio-button
-            .radio-button__item
-                input(type="radio" id="man" name="gender" value="man").radio-button__input
-                label(for="man").text Мужчина
-            .radio-button__item
-                input(type="radio" id="woman" name="gender" value="woman").radio-button__input
-                label(for="woman").text Женщина
     .card__fieldset
         label(for="user_birthday").label.input__label Дата Рождения
         input.input.input_masked(type="text" id="user_birthday" name="user_birthday" placeholder="ДД.ММ.ГГГГ")
+
     .card__fieldset
-        +label("Данные для входа в сервис")
+        h3.label Данные для входа в сервис
 
         input(type="text" id="user_email" name="user_email" placeholder="Email").input
 
         input(type="password" id="user_password" name="user_password" placeholder="Пароль").input
 
         .toggle-button
-            label(for="send-promo").text
-                input(type="checkbox" id="send-promo" name="send-promo")
+            label(for="get-promos").text
+                input(type="checkbox" id="get-promos" name="get-promos")
                 .toggle-button__slider
                 .text.toggle-button__text Получать спецпредложения
+
     .card__button
         .btn__send-wrapper
             button.btn.btn_send Перейти к оплате
@@ -35,4 +38,4 @@ form(action="" method="").card
     .card__footer
         a(href="sign-in.html").link Уже есть аккаунт на Toxin?
         a(href="sign-in.html")
-            button(type="button").btn.btn_white Войти
+            button.btn.btn_white Войти

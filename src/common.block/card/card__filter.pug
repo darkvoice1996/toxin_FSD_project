@@ -1,5 +1,5 @@
 .card
-    h1.title Найдём номера под ваши пожелания
+    h1.title.card__title Найдём номера под ваши пожелания
     .card__fieldset
         .date-dropdown__container
             .date-dropdown__item
@@ -22,7 +22,7 @@
                 input(type="text" id="guests" name="guests" placeholder="Сколько гостей").dropdown__input.input
                 i.material-icons.input__icon expand_more
 
-            .dropdown__content.dropdown__content_hidden
+            .dropdown__content.dropdown__content_hidden.card__dropdown-content
                 .dropdown-counter
                     .dropdown-counter__item
                         h3.dropdown-counter__title.label Взрослые

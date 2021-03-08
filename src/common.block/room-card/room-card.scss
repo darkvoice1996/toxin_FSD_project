@@ -14,7 +14,8 @@
   }
 
   &__wrapper {
-    padding: 20px;
+    margin-top: 2px;
+    padding: 20px 18px 20px 20px;
   }
 
   &__rating {
@@ -30,6 +31,11 @@
 
   &__rating {
     padding-top: 8px;
+  }
+
+  &__feedbacks {
+    padding-bottom: 3px;
+    padding-right: 2px;
   }
 
   &__feedbacks-number {

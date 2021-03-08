@@ -1,12 +1,15 @@
-form(action="" method="POST").card
-    +title("Войти")
+.card
+    h3.title.card__title Войти
+
     .card__fieldset
         input(type="text" id="user_email" name="" placeholder="Email").input
         input(type="password" id="user_password" name="" placeholder="Пароль").input
+
     .card__button
         .btn__send-wrapper
             button.btn.btn_send Войти
             i.material-icons.btn__send-icon arrow_forward
+
     .card__footer
         a(href="./registration.html").link Нет аккаунта на Toxin?
         a(href="./registration.html")

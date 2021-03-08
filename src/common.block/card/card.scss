@@ -9,8 +9,17 @@
   background-color: $bgc;
   @include box-shadow_global;
 
+  &__title {
+    padding-bottom: 4px;
+  }
+
   &__fieldset {
-    margin-top: 22px;
+    margin-top: 18px;
+
+    input {
+      margin-bottom: 10px;
+
+    }
 
     *:last-child {
       margin-bottom: 0;
@@ -21,8 +30,18 @@
     }
   }
 
+  &__dropdown-content {
+    transform: translateY(-10px);
+  }
+
+  &__radio {
+    padding: {
+      bottom: 7px;
+    }
+  }
+
   &__button {
-    margin-top: 29px;
+    margin-top: 19px;
   }
 
   &__footer {
