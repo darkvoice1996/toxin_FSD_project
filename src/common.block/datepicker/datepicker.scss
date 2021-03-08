@@ -191,11 +191,18 @@
   }
 
   &--buttons {
+    width: 400px;
+
+    display: flex;
+    justify-content: flex-end;
     padding: 0;
     border-top: none;
   }
 
-  //&--button {
-  //  @extend .btn-link
-  //}
+  &--button {
+    &:hover {
+      background-color: $bgc;
+    }
+  }
+
 }

@@ -675,8 +675,14 @@
   color: #bc9cff;
 }
 .datepicker--buttons {
+  width: 400px;
+  display: flex;
+  justify-content: flex-end;
   padding: 0;
   border-top: none;
+}
+.datepicker--button:hover {
+  background-color: #fff;
 }
 
 .dropdown__content {

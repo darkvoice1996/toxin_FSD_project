@@ -15,6 +15,7 @@ $('.datepicker-here').datepicker({
     },
 
     clearButton: true,
+    confirmButton: true,
 
     minDate: new Date(),
 
@@ -22,3 +23,23 @@ $('.datepicker-here').datepicker({
     prevHtml: '<i class="material-icons">arrow_back</i>',
     nextHtml: '<i class="material-icons">arrow_forward</i>'
 })
+
+let buttonsContainer = document.querySelectorAll('.datepicker--buttons')
+
+for (let i = 0; i < buttonsContainer.length; i++) {
+    createSubmitButton(buttonsContainer[i])
+}
+
+let buttons = document.querySelectorAll('.datepicker--button')
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.add('btn', 'btn_minimal')
+}
+
+function createSubmitButton (node) {
+    let btn = document.createElement('span')
+    btn.classList.add('datepicker--button')
+    btn.innerText = 'Применить'
+    node.appendChild(btn)
+}
+
