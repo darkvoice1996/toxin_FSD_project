@@ -176,6 +176,9 @@
   position: relative;
   white-space: nowrap;
 }
+.navbar__item:last-child {
+  padding-right: 0;
+}
 .navbar__item_expandable {
   display: flex;
   flex-flow: row nowrap;
@@ -211,20 +214,9 @@
   display: flex;
   flex-flow: row nowrap;
 }
-.auth-buttons__sign-in {
-  margin-left: 20px;
-  max-width: 196px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.auth-buttons__log-in {
-  margin-left: 10px;
-  min-width: 87px;
-  padding: 0;
-}
 .auth-buttons__button {
-  height: 34px;
-  line-height: 15px;
+  max-height: 34px;
+  margin-left: 20px;
 }
 
 .auth-user {
@@ -322,70 +314,6 @@
   background-color: #fff;
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   box-shadow: 0 45px 25px 10px rgba(31, 32, 65, 0.25);
-}
-
-.btn {
-  position: relative;
-  height: 44px;
-  box-sizing: border-box;
-  min-width: 99px;
-  border: none;
-  border-radius: 22px;
-  font-family: "Montserrat", Roboto, sans-serif;
-  font-size: 12px;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  background: linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
-  cursor: pointer;
-}
-.btn:active, .btn:focus {
-  outline: none;
-}
-.btn:hover {
-  color: #fff;
-  opacity: 0.5;
-}
-.btn:active {
-  top: 1px;
-}
-.btn_white {
-  border: 2px solid transparent;
-  background: radial-gradient(circle, white, white), linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-  color: #bc9cff;
-}
-.btn_white:hover {
-  color: #bc9cff;
-  opacity: 0.5;
-}
-.btn_minimal {
-  min-width: 50px;
-  padding: 0;
-  border: none;
-  background: none;
-  color: #bc9cff;
-  text-transform: uppercase;
-}
-.btn_minimal:hover {
-  text-decoration: none;
-  color: rgba(31, 32, 65, 0.5);
-}
-.btn__send-wrapper {
-  position: relative;
-}
-.btn__send-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  font-size: 24px;
-  color: #fff;
-  cursor: pointer;
-}
-.btn_send {
-  min-width: 320px;
 }
 
 .footer-bottom {
@@ -499,6 +427,76 @@
     border-bottom: 1px solid rgba(31, 32, 65, 0.25);
   }
 }
+.btn {
+  position: relative;
+  height: 44px;
+  box-sizing: border-box;
+  min-width: 99px;
+  border: none;
+  border-radius: 22px;
+  font-family: "Montserrat", Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
+  cursor: pointer;
+}
+.btn_narrow-87px {
+  min-width: 87px;
+}
+.btn_narrow-196px {
+  min-width: 196px;
+}
+.btn:active, .btn:focus {
+  outline: none;
+}
+.btn:hover {
+  color: #fff;
+  opacity: 0.5;
+}
+.btn:active {
+  top: 1px;
+}
+.btn_white {
+  border: 2px solid transparent;
+  background: radial-gradient(circle, white, white), linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: #bc9cff;
+}
+.btn_white:hover {
+  color: #bc9cff;
+  opacity: 0.5;
+}
+.btn_minimal {
+  min-width: 50px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #bc9cff;
+  text-transform: uppercase;
+}
+.btn_minimal:hover {
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+}
+.btn__send-wrapper {
+  position: relative;
+}
+.btn__send-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn_send {
+  min-width: 320px;
+}
+
 .input {
   width: 100%;
   max-width: 320px;
@@ -1390,23 +1388,22 @@
 .landing-page {
   width: 100%;
   height: 830px;
-  padding-top: 70px;
-  padding-bottom: 21px;
   box-sizing: border-box;
   background: url("./common.block/landing-page/landing-page__bg.jpg") bottom center no-repeat;
   background-size: cover;
 }
 .landing-page__container {
-  max-width: 1160px;
   height: 100%;
-  margin: 0 auto;
   position: relative;
+}
+.landing-page__widget {
+  padding-top: 70px;
 }
 .landing-page__tagline {
   width: 297px;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: -5px;
+  bottom: 21px;
   text-align: right;
   line-height: 24px;
 }
@@ -1446,6 +1443,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.auth__registration {
+  justify-content: flex-start;
 }
 
 .room-gallery {

@@ -3,20 +3,26 @@
 
 @import "common.block/ui-kit/ui-kit";
 
+// Colors & Typo
 @import "assets/fonts/font-face";
 @import "assets/fonts/font-awesome/css/all.css";
 @import "common.block/typography/typography";
 
+// Header & Footer
 @import "common.block/logo/logo";
 @import "common.block/navbar/navbar";
 @import "common.block/auth-buttons/auth-buttons";
 @import "common.block/auth-user/auth-user";
 @import "common.block/header/header.scss";
 @import "common.block/burger-button/burger-button";
-@import "common.block/btn/btn";
 @import "common.block/footer-bottom/footer-bottom";
 @import "common.block/socials/socials";
 @import "common.block/footer-nav/footer-nav";
+
+
+
+// Form Elements & Cards
+@import "common.block/btn/btn";
 @import "common.block/input/input";
 @import "common.block/date-dropdown/date-dropdown";
 @import "common.block/datepicker/datepicker";

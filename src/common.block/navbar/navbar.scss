@@ -10,7 +10,9 @@
     position: relative;
     white-space: nowrap;
 
-
+    &:last-child {
+      padding-right: 0;
+    }
 
     &_expandable {
       display: flex;
