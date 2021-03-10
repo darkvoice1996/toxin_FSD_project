@@ -1,0 +1,140 @@
+.room-filter
+    .room-filter__item
+        label(for="days-of-stay").label.input__label Даты пребывания в отеле
+        input(type="text" id="days-of-stay" name="days-of-stay"
+            placeholder="ДД.ММ.ГГГ"
+            data-range="true"
+            data-multiple-dates-separator=" - "
+            data-toggle-selected="false"
+            spellcheck="false").input.input__dropdown.input_narrow.datepicker-here.input_narrow
+    .room-filter__item
+        .dropdown.dropdown__guests
+            label(for="guests").label.input__label Гости
+            .input__wrapper
+                input(type="text" id="guests" name="guests" placeholder="Сколько гостей").dropdown__input.input
+                i.material-icons.input__icon expand_more
+
+            .dropdown__content.dropdown__content_narrow.dropdown__content_hidden
+                .dropdown-counter
+                    .dropdown-counter__item
+                        h3.dropdown-counter__title.label Взрослые
+                        .dropdown-counter__counter
+                            button.dropdown-counter__button.dropdown-counter__minus.dropdown-counter__button_blocked -
+                            .dropdown-counter__value.label 0
+                            button.dropdown-counter__button.dropdown-counter__plus +
+                    .dropdown-counter__item
+                        h3.dropdown-counter__title.label Дети
+                        .dropdown-counter__counter
+                            button.dropdown-counter__button.dropdown-counter__button_blocked.dropdown-counter__minus -
+                            .dropdown-counter__value.label 0
+                            button.dropdown-counter__button.dropdown-counter__plus +
+                    .dropdown-counter__item
+                        h3.dropdown-counter__title.label Младенцы
+                        .dropdown-counter__counter
+                            button.dropdown-counter__button.dropdown-counter__button_blocked.dropdown-counter__minus -
+                            .dropdown-counter__value.label 0
+                            button.dropdown-counter__button.dropdown-counter__plus +
+                    .dropdown-counter__item.dropdown-counter__controls
+                        button.btn.btn_minimal.dropdown-counter__clear-button.dropdown-counter__controls_hidden Очистить
+                        button.btn.btn_minimal.dropdown-counter__submit-button Применить
+    .room-filter__item
+        p Тут будет слайдер
+    .room-filter__item
+        .checkbox
+            .checkbox__title
+                h3.label.input__label Правила дома
+            label(for="smoking-allowed").checkbox__item
+                input(type="checkbox" id="smoking-allowed" name="smoking-allowed")
+                .checkbox__custom-input
+                .checkbox__text Можно курить
+            label(for="pets-allowed").checkbox__item
+                input(type="checkbox" id="pets-allowed" name="pets-allowed")
+                .checkbox__custom-input
+                .checkbox__text Можно с питомцами
+            label(for="party-allowed").checkbox__item
+                input(type="checkbox" id="party-allowed" name="party-allowed")
+                .checkbox__custom-input
+                .checkbox__text Можно пригласить гостей (до 10 человек)
+    .room-filter__item
+        form(action="" method="POST").checkbox
+            .checkbox__title
+                h3.label.input__label Дополнительные удобства
+            label(for="wide-halls").checkbox__item
+                input(type="checkbox" id="wide-halls" name="wide-halls")
+                .checkbox__custom-input
+                .checkbox__text.checkbox__text_bold Широкий коридор
+                .checkbox__empthy-space
+                .checkbox__decription Ширина коридоров в номере не менее 91 см.
+            label(for="helper").checkbox__item
+                input(type="checkbox" id="helper" name="helper")
+                .checkbox__custom-input
+                .checkbox__text.checkbox__text_bold Помощник для инвалидов
+                .checkbox__empthy-space
+                .checkbox__decription На 1 этаже вас встретит специалист  и проводит до номера.
+    .room-filter__item
+        .dropdown.dropdown__rooms
+            label(for="512").label.input__label Удобства номера
+            .input__wrapper_narrow
+                input(type="text" id="512" name="" placeholder="Сколько комнат").dropdown__input.input.input_narrow
+                i.material-icons.input__icon expand_more
+
+            .dropdown__content.dropdown__content_hidden.dropdown__content_narrow
+                .dropdown-counter
+                    .dropdown-counter__item
+                        h3.dropdown-counter__title.label Спальни
+                        .dropdown-counter__counter
+                            button.dropdown-counter__button.dropdown-counter__minus.dropdown-counter__button_blocked -
+                            .dropdown-counter__value.label 0
+                            button.dropdown-counter__button.dropdown-counter__plus +
+                    .dropdown-counter__item
+                        h3.dropdown-counter__title.label Кровати
+                        .dropdown-counter__counter
+                            button.dropdown-counter__button.dropdown-counter__button_blocked.dropdown-counter__minus -
+                            .dropdown-counter__value.label 0
+                            button.dropdown-counter__button.dropdown-counter__plus +
+                    .dropdown-counter__item
+                        h3.dropdown-counter__title.label Ванные Комнаты
+                        .dropdown-counter__counter
+                            button.dropdown-counter__button.dropdown-counter__button_blocked.dropdown-counter__minus -
+                            .dropdown-counter__value.label 0
+                            button.dropdown-counter__button.dropdown-counter__plus +
+    .room-filter__item
+        .expandable-block
+            .expandable-block__header
+                h3.label Expandable checkbox list
+                .expandable-block__icon
+                    i.material-icons expand_more
+            .checkbox.expandable-block__content.expandable-block__content_hidden
+                label(for="breakfast").checkbox__item
+                    input(type="checkbox" id="breakfast" name="breakfast")
+                    .checkbox__custom-input
+                    .checkbox__text Завтрак
+                label(for="table").checkbox__item
+                    input(type="checkbox" id="table" name="table")
+                    .checkbox__custom-input
+                    .checkbox__text Письменный стол
+                label(for="child-chair").checkbox__item
+                    input(type="checkbox" id="child-chair" name="child-chair")
+                    .checkbox__custom-input
+                    .checkbox__text Стул для кормления
+                label(for="child-bed").checkbox__item
+                    input(type="checkbox" id="child-bed" name="child-bed")
+                    .checkbox__custom-input
+                    .checkbox__text Кроватка
+                label(for="TV").checkbox__item
+                    input(type="checkbox" id="TV" name="TV")
+                    .checkbox__custom-input
+                    .checkbox__text Телевизор
+                label(for="Shampoo").checkbox__item
+                    input(type="checkbox" id="Shampoo" name="Shampoo")
+                    .checkbox__custom-input
+                    .checkbox__text Шампунь
+    .room-filter__item
+
+    .room-filter__item
+
+    .room-filter__item
+
+    .room-filter__item
+
+    .room-filter__item

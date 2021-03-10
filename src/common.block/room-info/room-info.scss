@@ -42,6 +42,8 @@
 .room-price {
   &__number {
     font-weight: bold;
+    transform: translateX(4px);
+
   }
 
   &__period {

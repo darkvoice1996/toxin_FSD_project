@@ -1,0 +1,15 @@
+.room-filter {
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding-top: 30px;
+
+  &__item {
+    margin-bottom: 30px;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}

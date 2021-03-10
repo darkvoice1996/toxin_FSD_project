@@ -2,13 +2,12 @@
   &__container {
     display: grid;
     grid-template-columns: 266px 1fr;
-    grid-column-gap: calc(100vw / 24);
+    grid-column-gap: 60px;
   }
 
   &__rooms {
   }
 
   &__filter {
-    background-color: lightgreen;
   }
 }
